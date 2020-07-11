@@ -1,9 +1,13 @@
 # Punky Pong
 
-A restoration of Bones' Punky Pong flash game from 2009. Based on the archived version at <https://web.archive.org/web/20100113173616if_/http://www.fox.com/bones/features/game/>, which doesn't work
+A restoration of Bones' Punky Pong flash game from 2009. Based on the archived version at <https://web.archive.org/web/20100113173616if_/http://www.fox.com/bones/features/game/>, which doesn't work.
+
+As mentioned in _The Boney Island Whitefish in: Being Joel David Moore_, a Patreon bonus podcast for [Trashfuture](https://www.patreon.com/posts/boney-island-in-39157856) and [Boonta Vista](https://www.patreon.com/posts/boney-island-in-39156826) patrons.
 
 I'm sad to say it's not very good; I wasted a lot of time on this. You'll need a browser with Flash enabled to run it. Those are becoming more and more rare!
 
 <https://ticky.github.io/bones-punky/>
+
+The original ads didn't get archived so I replaced them with something which seems period-appropriate.
 
 Not to be all "no copyright intended" or anything but this is for archival purposes only and I do not claim any ownership of any of the resources contained herein!
