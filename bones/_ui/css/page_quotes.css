@@ -1,0 +1,54 @@
+/*
+ *  Bones - quotes page 
+ *
+ *  1. bones updates
+ *
+ */
+
+/* -1- bones updates
+ * ----------------------------------------------------------------------------------------------------*/
+body.quotes #interior-content {
+	background: transparent url(/web/20100113182608im_/http://www.fox.com/bones/images/content_bg.png) repeat-y center top;
+	width: 815px;
+	margin: -6px 0 0 53px;
+}
+
+body.quotes #interior-content-top {
+	background: transparent url(/web/20100113182608im_/http://www.fox.com/bones/images/content_bg_top.png) no-repeat 11px top;
+	width: 695px;
+	color: #666;
+	font: 1em Arial, Helvetica, sans-serif;
+	line-height: 1.57em;
+	padding: 60px 50px 0 70px;
+}
+
+body.quotes #interior-content h1 {
+	background: transparent url(/web/20100113182608im_/http://www.fox.com/bones/images/quotes_title.gif) no-repeat;
+	width: 289px;
+	height: 24px;
+	text-indent: -1000em;
+	padding: 0;
+	margin: -10px 0 20px 100px;
+}
+
+/*
+     FILE ARCHIVED ON 18:26:08 Jan 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:13:24 Jul 11, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.resolve: 24.102
+  esindex: 0.017
+  load_resource: 35.202
+  exclusion.robots.policy: 0.14
+  captures_list: 67.681
+  exclusion.robots: 0.151
+  CDXLines.iter: 15.038 (3)
+  LoadShardBlock: 30.561 (3)
+  PetaboxLoader3.datanode: 39.409 (4)
+  RedisCDXSource: 17.348
+*/

@@ -1,0 +1,379 @@
+.slFieldValidationIndicator {
+	color:#ff0000;
+}
+.Sitelife_PluckLogo {
+	display:none;
+}
+#schedule input {
+	margin:2px;
+}
+/* Sign-In - Header */
+#regsSubmit {
+	background:url(../images/btn/blank.gif) 0 0 no-repeat;
+	border:medium none;
+	padding:0;
+	color:#fff;
+	font-size:10px;
+	width:59px;
+	height:20px;
+	margin:0 2px;
+	text-align:center;
+}
+#signin_panel input {
+	border: 0px solid #fff;
+	border:medium none;
+	margin:0;
+	padding:0;
+}
+#signin_panel .Reg_UserUpdateWrapper input,
+#signin_panel .Table_ChangePass input,
+#signin_panel .Table_FloatLoginLeft input,
+#signin_panel .Table_FloatLoginMid input {
+	border:1px solid #ccc;
+	margin:0 5px 4px 0;
+	padding:3px 5px 2px;
+}
+#signin_panel .Table_FloatLoginRight input {
+	background:url(../images/btn/signin_arrow.gif) 0 0 no-repeat;
+	height:14px;
+	margin:2px 5px 4px 0;
+	padding:0;
+	width:10px;
+	/*hack to keep value text from appearing*/
+	color: transparent;
+	text-transform: capitalize;
+	text-indent:-1000px;
+	overflow:hidden;
+}
+.slaErrorMessage,
+.slFieldValidationIndicator {
+	color:#ff0000;
+}
+#signin_panel .Reg_RightAlign input {
+	border:1px solid #ccc;
+	width:auto;
+}
+#signin_panel .Reg_UserUpdateWrapper input[type="button"],
+#signin_panel .Table_ChangePass input[type="button"],
+#signin_panel .Reg_RightAlign input[type="button"] {
+	background:url(../images/btn/blank.gif) 0 0 no-repeat;
+	border:medium none;
+	padding:0;
+	color:#fff;
+	font-size:10px;
+	width:59px;
+	height:20px;
+	margin:0 2px;
+	text-align:center;
+}
+
+/* Sign-In - Panel */
+#sign_in_panel_player .Table_FloatLoginRight input,
+#sign_in_panel_body .Table_FloatLoginRight input {
+	display:block;
+	background:url(../../images/blue_arrow.jpg) 0 0 no-repeat;
+	height:14px;
+	margin:2px 5px 4px 0;
+	padding:0;
+	width:10px;
+	border:medium none;
+	/*hack to keep value text from appearing*/
+	color:transparent;
+	text-indent:-90px;
+	text-transform: capitalize;
+}
+#sign_in_panel_body .Reg_UserUpdateWrapper input,
+#sign_in_panel_body .Table_ChangePass input,
+#sign_in_panel_body .Table_FloatLoginLeft input,
+#sign_in_panel_body .Table_FloatLoginMid input,
+#sign_in_panel_player .Reg_UserUpdateWrapper input,
+#sign_in_panel_player .Table_ChangePass input,
+#sign_in_panel_player .Table_FloatLoginLeft input,
+#sign_in_panel_player .Table_FloatLoginMid input {
+	border:1px solid #ccc;
+	margin:0 5px 4px 0;
+	padding:3px 5px 2px;
+}
+#signin_body div#signIn,
+#signin_player div#signIn {
+	padding-left:20px;
+}
+
+/* Comments */
+#userReviews {
+	padding-bottom:0px;
+}
+#userReviews #showNameAndRating {
+	float:none;
+	margin-bottom:0px;
+}
+.Comments_Table {
+	color:#C2C2C2;
+	border-spacing: 0px 18px;
+}
+table.Comments_Table {
+	margin:0;
+}
+div.Comments_Container {
+	padding-top:0;
+}
+tr.Comments_TableRowColor,
+tr.Comments_TableAltRowColor {
+	background-color:transparent;
+	border-bottom:1px solid #000;
+	margin-bottom:18px;
+}
+div.Comments_Container table a {
+	color: #FFFFFF;
+}
+td.Comments_UserImage img {
+	margin-top:5px
+}
+a.SiteLife_ReportAbuse {
+	display:block;
+	margin-bottom:5px;
+}
+
+div.Comments_From a {
+	font-size:1.2em;
+}
+td.Comments_UserImage,
+td.Comments_TableRight {
+	padding:15px 5px 10px 0;
+}
+.pluck-c {
+	background-color:#1E1E1E;
+}
+#plckReviews {
+	background-color:#1e1e1e;
+	text-align:center;
+	margin-bottom:20px;
+}
+#pluck-comments-holder {
+	width:1px;
+	height:1px;
+	display:none;
+}
+
+/* Profile */
+#personaDest div {
+	color: #FFFFFF;
+}
+div.PersonaHeader_Container{
+	background: none !important; 
+	color: #FFFFFF !important;
+	border:none !important
+}
+div.PersonaTabs_Container{
+	background: none !important;
+}	     
+div.PersonaTabs_Container a.PersonaTabs_On{
+	background: none !important;
+	border: none !important;
+}
+div.PersonaTabs_Container a.PersonaTabs_Off{
+	background: none !important;
+	border: none !important;
+}    
+div.PersonaStyle_SectionHead{
+	background: none !important;
+	border: none !important;
+}               
+div.PersonaStyle_ItemContainer{
+	background: none !important;
+	border: none !important;
+}        
+a.Persona_TopPluckLink, div.Pluck_FooterLink a{
+	display: none !important;
+}
+div.Persona_LoginStatus{
+	display: none;
+}
+td.PersonaHeader_TableRight {
+	overflow:hidden !important;
+	padding:0 0 0 10px !important;
+	text-align:right !important;
+	vertical-align:top !important;
+	width:100px !important;
+}
+div#rpt_persona_abuse {
+	margin-left:-10px;
+	padding-top: 10px;
+	width:100px;
+}
+div#rpt_persona_abuse a.SiteLife_ReportAbuse {
+	padding-left:15px;
+	width:80px;
+}
+div.PersonaHeader_Info {
+	border-bottom:1px solid #444444 !important; 
+	line-height:14px !important;
+	overflow:hidden !important;
+	padding:10px 0 !important; 
+	width:100% !important;
+}
+.PersonaHeader_InfoHeading {
+	color:#FF4B00 !important;
+	font-weight:bold !important;
+}
+td.PersonaHeader_TableLeft {
+	background:#444444 none repeat scroll 0 0 !important;
+	margin-left:0 !important;
+	overflow:hidden !important;
+	padding-bottom:10px !important;
+	text-align:center !important;
+	vertical-align:top !important;
+	width:83px !important;
+}
+td.PersonaHeader_TableMiddle {
+	overflow:hidden;
+	padding:10px 10px 0;
+	vertical-align:top;
+	width:355px;
+	_width:325px;
+	@width:325px;
+	background: #333;
+}
+td.PersonaHeader_TableRight {
+	background:#333;
+}
+td.Persona_2ColumnTableLeft {
+	padding:0 15px 0 0;
+	vertical-align:top;
+	width:67%;
+}
+td.Persona_2ColumnTableRight {
+	border-left: 1px dotted #222;
+	padding-left: 15px;
+}
+table.Reactions_Table {
+	border-bottom:1px dotted #222;
+	padding:7px 0;
+	width:100%;
+}
+td.PersonaHeader_TableLeft img {display:block;margin-left:19px;*margin-left:0px;}
+table.CreateItem_Table {
+	background:#000000 !important;
+	border: none !important;
+	color:#FFFFFF !important;
+	font-family: Arial;
+}
+.mceEditor{
+   border: 2px solid #2C85BF;
+}
+input.CreateItem_TableFormInput{
+	border: 1px solid #2C85BF;   
+	width: 580px !important;       
+}
+.CreateItem_TableText, .mceToolbarBottom {
+	display: none !important;
+}
+.mceEditor, .mceEditorIframe {
+	width: 580px !important;
+	height: 200px !important;
+}
+div.PersonaStyle_ItemContainer {
+	color:#FFFFFF;
+	border: none;
+}
+div.PersonaStyle_SectionHead {
+	background: none;
+}
+.CreateItem_Iframe{overflow:hidden;height:390px !important;}
+
+/* Edit Profile */
+
+td.ProfileEdit_TableFieldName {padding:10px 15px 30px 0px;width:20%;}
+.ProfileEdit_TableField {padding-bottom:14px !important;}	
+td.ProfileEdit_Caption {padding-right:125px;}	
+div.ProfileEdit_Submit {text-align:left;	padding-left:18px;padding-top:14px !important;border-top:1px solid #4f4f4f;}	
+div.Pluck_FooterLink {	margin-left:485px;margin-top:-40px;position:absolute;padding:0px !important;}	
+iframe.Profile_Iframe {height:925px;}	
+div.Persona_Main a, div.Persona_Main a:hover {color:#ffffff;}	
+div.Persona_Main a {text-decoration:none;}	
+tr.ProfileEdit_TableCommentPrivacyRow td.ProfileEdit_PublicPrivateRadio {padding-left:4px;}	
+td.ProfileEdit_TableFieldName {width:20% !important;}	
+.Profile_Iframe, body.PersonaProfile_Body, div.Persona_Main, div.Persona_Main div {background:none;}	
+iframe.Profile_Iframe, body.PersonaProfile_Body {background-color:#111111 !important;}
+
+div.PersonaHeader_PublicContent a {
+	border:0;
+	background:none;
+	height:30px;
+	padding:3px;
+	width:auto;
+	line-height:14px;
+}
+
+div.Persona_Main .SiteLife_Dialog {
+	background:#333;
+}
+div.SiteLife_Dialog div {
+	background-image:none !important;
+}
+div.PersonaStyle_FacebookHelpDialog .Dialog_Right_Arrow_Bottom,
+div.PersonaStyle_FacebookHelpDialog .Dialog_Right_Arrow_Top {
+	background-image:none;
+}
+#Persona_FacebookHelpDialog .background {
+	background:#000;
+	opacity:0.5;
+}
+div.PersonaStyle_FacebookHelpDialog .contents {
+	background-color:transparent;
+}
+td.Persona_2ColumnTableRight {
+	display:none;
+}
+
+.PrivatePersona_ItemContainer {
+	display:none;
+}
+
+div.Persona_NullContent,
+td.PersonaHeader_TableMiddle div.PersonaHeader_Info {
+	display:none;
+}
+#ProfileEdit_SectionDescription_Link p a,
+tr.ProfileEdit_TableAboutMeRow,
+tr.ProfileEdit_PersonaPrivacyAccessRow,
+tr.ProfileEdit_TableMessageAccessRow,
+tr.ProfileEdit_TableCommentPrivacyRow,
+tr.ProfileEdit_TablePhotoPrivacyRow,
+tr.ProfileEdit_TableLocationRow {
+	display:none;
+}
+
+div.PersonaHeader_PublicContent {
+	display:none;
+}
+div.Persona_Main div.ReportAbuse_Container,
+div.ReportAbuse_Container {
+	background-color:#666666;
+	padding:10px;
+}
+div.Comments_Container {
+	text-align:right;
+}
+
+/*
+     FILE ARCHIVED ON 17:11:18 Jan 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:13:24 Jul 11, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots: 0.131
+  RedisCDXSource: 0.57
+  exclusion.robots.policy: 0.121
+  load_resource: 625.573
+  captures_list: 140.569
+  PetaboxLoader3.datanode: 647.518 (4)
+  esindex: 0.014
+  CDXLines.iter: 11.354 (3)
+  PetaboxLoader3.resolve: 81.768 (2)
+  LoadShardBlock: 124.928 (3)
+*/

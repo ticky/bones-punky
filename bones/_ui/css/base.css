@@ -1,0 +1,558 @@
+/*
+ *	Bones - base css
+ *
+ *	1. fox main css updates 
+ *	2. main layout 
+ *
+ * */
+
+/* overriding fox header 
+ * ----------------------------------------------------------------------------------------------------*/
+body {
+	background: #bababa url(../../images/box_tile_home.jpg) -87px 8px;
+	position: relative;
+}
+
+#nav-bg {
+	position: absolute;
+	top: 139px;
+	right: 0px;
+	background: transparent url(../../images/nav_tile.jpg) right top;
+	width: 30%;
+	height: 65px;
+	z-index: 1;
+}
+
+#header .inner {
+	padding: 10px 0;
+	}
+	
+	#header .date {
+		position: absolute;
+		left: -1000em;
+		}
+
+#show-vert {
+	height: 90px;
+	padding: 4px 0;
+	background: #1e1e1e;
+}
+
+#show-vert .inner {
+	text-align: center;
+	}
+
+	
+	/* logo 
+	 * ------------------------------------------------------------------------------------------------*/
+	 
+	#header h1 {
+		margin: 0 90px 0 0;
+		float: left;
+		}
+
+	#header h1 a{
+		margin: 0;
+		display: block;
+		width: 47px;
+		height: 21px;
+		overflow: hidden;
+		background: url(../../../ui/images/fox_logo_common.png) no-repeat left top;
+		text-indent: -1000em;
+		text-align: left;
+		}
+
+	#header h1 img {
+		display: none;
+		}
+
+	/* nav 
+	 * ------------------------------------------------------------------------------------------------*/
+	#gnavcontainer {
+		width: 800px;
+		height: 15px;
+		padding: 0;
+		margin: 12px 0 0 222px;
+	}
+	
+	#gnavcontainer li {
+		float: left;
+		height: 15px;
+	}
+			
+	#gnavcontainer a {
+		background: transparent url(../../images/nav/bg.gif) no-repeat top left;
+		float: left;
+		display: inline;
+		height: 15px;
+		text-indent: -1000em;
+	}
+
+	/* info */
+	#gnavcontainer a.info {
+		width: 51px;
+		background-position: 0 0;
+	}
+	#gnavcontainer a.info:hover {
+		background-position: 0 -17px;
+	}
+	body.info #gnavcontainer a.info{
+		background-position: 0 -34px;
+	}
+
+	/* bios */
+	#gnavcontainer a.bios {
+		width: 54px;
+		background-position: -49px 0;
+	}
+	#gnavcontainer a.bios:hover {
+		background-position: -49px -17px;
+	}
+	body.bios #gnavcontainer a.bios {
+		background-position: -52px -34px;
+	}
+
+	/* recaps */
+	#gnavcontainer a.recaps {
+		width: 73px;
+		background-position: -99px 0;
+	}
+	#gnavcontainer a.recaps:hover {
+		background-position: -99px -17px;
+	}
+	body.recaps #gnavcontainer a.recaps {
+		background-position: -107px -34px;
+	}
+
+	/* watch */
+	#gnavcontainer a.watch {
+		width: 207px;
+		background-position: -172px 0;
+	}
+	#gnavcontainer a.watch:hover {
+		background-position: -172px -17px;
+	}
+
+	/* gallery */
+	#gnavcontainer a.gallery {
+		width: 71px;
+		background-position: -377px 0;
+	}
+	#gnavcontainer a.gallery:hover {
+		background-position: -377px -17px;
+	}
+	body.gallery #gnavcontainer a.gallery {
+		background-position: -377px -34px;
+	}
+
+	/* features */
+	#gnavcontainer a.features {
+		width: 82px;
+		background-position: -444px 0;
+	}
+	#gnavcontainer a.features:hover {
+		background-position: -444px -17px;
+	}
+	body.features #gnavcontainer a.features, body.music #gnavcontainer a.features, body.quotes #gnavcontainer a.features, body.blog #gnavcontainer a.features {
+		background-position: -448px -34px;
+	}
+
+	/* community */
+	#gnavcontainer a.community {
+		width: 137px;
+		background-position: -520px 0;
+	}
+	#gnavcontainer a.community:hover {
+		background-position: -520px -17px;
+	}
+
+	/* newsletter */
+	#gnavcontainer a.newsletter {
+		width: 96px;
+		background-position: -653px 0;
+	}
+	#gnavcontainer a.newsletter:hover {
+		background-position: -653px -17px;
+	}
+	
+#shareandGrab {
+	position: relative;
+	left: 236px;
+	top: 28px;
+	color: #ce8f2f;
+	font-weight: 600px;
+	z-index: 1;
+}
+
+	#nav {
+		float: left;
+		position: relative;
+		bottom: auto;
+		left: auto;
+		font: normal normal bold 1.33em/21px Helvetica,Arial,verdana,sans;
+		}
+
+		#nav li {
+			margin: 0 45px 0 0;
+			}
+
+		#nav li a{
+			height: auto;
+			padding: 0;
+			}		
+			#logolink {
+	float: left;
+}
+
+#logolink a {
+	width: 200px;
+	height: 50px;
+	color: #fff;
+	font-size: 1px;
+	line-height: 1px;
+	display: none;
+	text-decoration: none;
+}
+
+	#home .home, #info .info, #bios .bios, #recaps .recaps, #watch .watch, #gallery .gallery, #features .features, #community .community
+		{ 
+			/* highlighted navigation here */
+			color:#ce8f2f;
+			text-decoration:underline;
+		}
+	/* user-nav 
+	 * ------------------------------------------------------------------------------------------------*/
+	
+	#user-nav {
+		bottom: auto;
+		right: auto;
+		position: relative;
+		float: right;
+		line-height: 21px;
+		width: 200px;
+		}
+
+
+/* content
+ * ----------------------------------------------------------------------------------------------------*/
+#content {
+	background: transparent url(../images/bg_new_w.jpg) no-repeat center top;
+	padding: 0 0 10px;
+	position: relative;
+	min-height: 1130px;
+	overflow: hidden;
+	}
+
+	#content .inner {
+		position: relative;
+		padding: 0 0 10px;
+		z-index: 10;
+	}
+	
+	.community-tools {
+		clear: both;
+		width: 300px;
+		padding: 0;
+		margin: 0 0 0 -10px;
+	}
+	
+	.community-tools .inner ul {
+		margin: 30px 0 0 0;
+	}
+	
+	.community-tools .inner ul li {
+		float: left;
+	}
+	
+	.community-tools .inner ul li a.bookmark-button {
+		background: transparent url(../images/bg_bookmark_share.png) no-repeat top left;
+		width: 160px;
+		height: 13px;
+		float: left;
+		display: inline;
+		text-indent: -1000em;
+	}
+	
+	.community-tools .inner ul li.slash {
+		background: transparent url(../../ui/images/ico_slash.png) no-repeat 0 0;
+		width: 9px;
+		height: 13px;
+	}
+		
+	.community-tools .inner ul li a.grab-bones-button {
+		background: transparent url(../../ui/images/bg_grab_bones.png) no-repeat 0 1px;
+		width: 160px;
+		height: 13px;
+		float: left;
+		display: inline;
+		text-indent: -1000em;
+	}
+	
+	.community-tools .inner ul li a:hover.bookmark-button,
+	.community-tools .inner ul li a:hover.grab-bones-button {
+		background-position: 0 -13px;
+	}
+
+	/* content right bottom background */
+	#content span.cr {
+		/* common -> image replacement */
+
+		width: 750px;
+		height: 869px;
+		z-index: -1;
+		position: absolute;
+		right: -316px;
+		bottom: -10px;
+		/* background-image: url(../../ui/images/bg_content_r.jpg); */
+		}
+
+	#content .main-content {
+		width: 650px;
+		float: left;
+		}
+
+	#content .aside-content {
+		width: 310px;
+		float: right;
+		}
+		
+	/* Interior Content 
+	 * ----------------------------------------------------------------------------------------------------*/
+		#interior-content {
+			background: transparent url(../../images/content_bg.png) repeat-y center top;
+			width: 815px;
+			margin: -6px 0 0 53px;
+		}
+		#interior-content-top {
+			background: transparent url(../../images/content_bg_top.png) no-repeat 11px top;
+			width: 695px;
+			color: #666;
+			font: 1em Arial, Helvetica, sans-serif;
+			line-height: 1.57em;
+			padding: 60px 50px 0 70px;
+		}
+		#interior-content-bottom {
+			background: transparent url(../../images/content_bg_bot.png) no-repeat left bottom;
+			width: 815px;
+			height: 63px;
+			padding: 0;
+			margin: 0 0 0 53px;
+		}
+
+	/* show-highlights 
+	 * ----------------------------------------------------------------------------------------------------*/
+	#show-highlights {
+		height: 170px;
+		position: relative;
+		z-index: 1;
+		}
+
+		#show-highlights h2 {
+			/* common -> hidden */
+			}
+
+		/* highlights 
+		 * ------------------------------------------------------------------------------------------------*/
+		#show-highlights .highlights {
+			}
+		#show-highlights .highlights li {
+			display: none;
+			color: #FFF;
+			}
+
+		#show-highlights .highlights h3{
+			margin: 0 0 15px;
+			color: #f7d700;
+			font-size: 1.333em;
+			font-weight: normal;
+			line-height: 1.2em;
+			text-transform: uppercase;
+			}
+
+		#show-highlights .highlights h3 a {
+			color: #f7d700;
+			}	
+		
+		#show-highlights .highlights h3 a:hover {
+			text-decoration: none;
+			}
+
+		#show-highlights .highlights img {
+			border: 1px solid #000;
+			float: left;
+			margin: 3px 10px 10px 0;
+			}
+
+		#show-highlights .highlights p {
+			margin: 0 -10px 10px 0;
+			font-size: 1.083em;
+			line-height: 1.2em;
+			}
+
+		#show-highlights .highlights a.action {
+			padding: 0 0 0 15px;
+			clear: both;
+			display: block;
+			background: transparent url(../../ui/images/ico_view_a_white.png) no-repeat left center;
+			color: #FFF;
+			font-size: 1.333em;
+			line-height: 1.2em;
+			text-transform: uppercase;
+			}
+
+		#show-highlights .highlights li.active {
+			display: block;
+			}
+
+		/* player */
+		#show-highlights .player {
+			display: none; /* tmp - untill js*/
+			position: absolute;
+			left: -36px;
+			bottom: -18px;
+			}
+		
+		/* controls */
+		#show-highlights .nav {
+			position: absolute;
+			bottom: 10px;
+			right: 0px;
+			}
+
+			#show-highligts .nav h3 {
+				/* common -> hidden */
+				}
+
+			#show-highlights .nav li {
+				float: left;
+				}
+		
+			#show-highlights .nav a {
+				/* common -> image replacemnt */
+				width: 17px;
+				height: 17px;
+				background-image: url(../../images/bg_highlights_nav.png);
+				}
+
+			#show-highlights .nav .active a {
+				margin: -3px;
+				width: 23px;
+				height: 23px;
+				background-image: url(../../images/bg_highlights_nav_h.png);
+				}
+				
+		/* Hex Pic Cast*/
+		#hex {
+			position: absolute;
+			top: 178px;
+			left: 749px;
+			padding: 0;
+			z-index: 6;
+		}
+		
+		/* Interior ad */
+		#ad {
+			position: absolute;
+			top: 390px;
+			left: 640px;
+			background: transparent url(../../images/ad_placeholder.png) no-repeat;
+			width: 330px;
+			height: 301px;
+			padding: 39px 50px 0 0;
+			z-index: 5;
+		}
+		
+		#ad iframe {
+			width: 298px;
+			height: 250px;
+			padding: 0;
+			margin: 0 0 0 34px;
+		}
+
+		/* legal copy 
+		 * ----------------------------------------------------------------------------------------------------*/
+		#legal {
+			width: 1000px;
+			color: #666;
+			font-size: 1.1em;
+			text-align: left;
+			padding: 10px 0 20px 0;
+			margin: 0 auto;
+			}
+
+		body.info #legal,
+		body.bios #legal,
+		body.recaps #legal,
+		body.features #legal,
+		body.quotes #legal,
+		body.music #legal,
+		body.blog #legal {
+			padding: 10px 0 20px 75px;
+		}
+		
+		/* widget window
+		 * ----------------------------------------------------------------------------------------------------*/
+		 body.widget {
+			padding:0;
+			margin:0 }
+
+			 body.widget #content{
+				background:#000;
+				padding:0 }
+
+				 body.widget #content .inner{
+					background:#bababa url(../../ui/images/bg-widget_window.jpg) no-repeat;
+					width:777px;
+					height:520px }
+
+/* home page assets */
+
+	
+	
+.wfeRollover{
+	display:block;
+	background-image:url(../../images/wfe_btn.png);
+	background-repeat:no-repeat;
+	text-decoration:none;
+	width:155px; 
+	height:130px;
+}
+
+a.wfeRollover:hover{
+	display:block;
+	background-image:url(../../images/wfe_btn_over.png);
+	background-repeat:no-repeat;
+	text-decoration:none;
+	width:155px; 
+	height:130px;
+	}
+	
+a.wfeRollover:active{
+	display:block;
+	background-image:url(../../images/wfe_btn_hit.png);
+	background-repeat:no-repeat;
+	text-decoration:none;
+	width:155px; 
+	height:130px;
+	}
+/*
+     FILE ARCHIVED ON 18:26:12 Jan 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:13:24 Jul 11, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  esindex: 0.013
+  exclusion.robots.policy: 0.176
+  LoadShardBlock: 91.793 (3)
+  PetaboxLoader3.datanode: 38.277 (4)
+  load_resource: 69.642
+  captures_list: 148.312
+  RedisCDXSource: 37.04
+  exclusion.robots: 0.189
+  CDXLines.iter: 16.234 (3)
+  PetaboxLoader3.resolve: 119.706 (3)
+*/

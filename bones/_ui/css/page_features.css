@@ -1,0 +1,90 @@
+/*
+ * bones - features page 
+ * 
+ * 1. main updates  
+ * 2. wallpapers-info
+ * 3. icons-info
+ * 4. features-promo
+ *
+ */
+
+/* -1- main updates 
+ * ----------------------------------------------------------------------------------------------------*/
+body.features #videos-info {
+	width: 800px;
+	text-align: center;
+	margin: 0 auto;
+}
+body.features #interior-content h1 {
+	background: transparent url(/web/20100113182606im_/http://www.fox.com/bones/images/features_title.gif) no-repeat left top;
+	width: 135px;
+	height: 24px;
+	text-indent: -1000em;
+	padding: 0;
+	margin: 0 0 20px 30px;
+}
+#interior-content {
+	background: transparent url(/web/20100113182606im_/http://www.fox.com/bones/images/bg_extras.png) no-repeat left top;
+	margin: 10px 0 0 -25px;
+	width:1013px;
+	height:1114px;
+}
+body.features #ad {
+	top:100px;
+}
+#features {
+	margin: 420px 0 0 50px;
+	float: right;
+}
+#features li {
+	margin: 0 1px 3px 0;
+}
+#features li a {
+	display: block;
+	/*background: transparent url(/web/20100113182606im_/http://www.fox.com/bones/images/features/nav_bg.png) no-repeat left top;*/
+	width: 310px;
+	height: 92px;
+	color: #000;
+	line-height: 1.25em;
+	padding: 18px 5px 0 41px;
+	text-decoration: none;
+}
+#features li a:hover {
+	/*background-position: 0 -120px;*/
+	color: #3e3121;
+}
+#features li a img {
+	display: block;
+	margin: 0 0 4px 0;
+}
+#features li a img.thumbnail {
+	float: left;
+	margin: 0 10px 0 0;
+}
+#features li a span {
+	color: #000;
+}
+#wbapp {
+	margin: 20px 0 0 55px;
+}
+/*
+     FILE ARCHIVED ON 18:26:06 Jan 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:13:25 Jul 11, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 23.072
+  exclusion.robots: 0.185
+  exclusion.robots.policy: 0.173
+  captures_list: 716.227
+  PetaboxLoader3.datanode: 632.418 (4)
+  LoadShardBlock: 674.419 (3)
+  esindex: 0.013
+  PetaboxLoader3.resolve: 60.091 (3)
+  CDXLines.iter: 15.246 (3)
+  load_resource: 34.651
+*/

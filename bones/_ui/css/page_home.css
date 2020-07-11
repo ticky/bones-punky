@@ -1,0 +1,452 @@
+/*
+ *  Bones - homepage
+ *
+ *  1. main updates
+ *  2. gallery-info
+ *  3. community-info
+ *  4. blog-info
+ *  5. bios-info
+ *  6. downloads-info
+ */
+
+/* Bones main content */
+#homeContent {
+	background: transparent url(/web/20100113182613im_/http://www.fox.com/bones/images/bg_home.jpg) no-repeat center -38px;
+}
+
+/* Bookmark and Grab */
+body.home #show-header .community-tools {
+	left: 720px;
+}
+
+body.home #show-header #ad {
+	position: absolute;
+	top: 340px;
+	left: 633px;
+	background: transparent url(/web/20100113182613im_/http://www.fox.com/bones/images/ad_placeholder.png) no-repeat;
+	width: 347px;
+	height: 300px;
+	padding: 40px 0 0 33px;
+	z-index: 10000;
+}
+
+body.home #show-header #ad iframe {
+	width: 298px;
+	height: 250px;
+	padding: 0;
+	margin: 0 0 0 1px;
+}
+
+/* Countdown */
+#countdown {
+	margin: 84px 0 0 12px;
+}
+
+/* Watch Full Episodes */
+#watch-full-episodes {
+	margin: 125px 0 0 117px;
+}
+
+#watch-full-episodes a:link,
+#watch-full-episodes a:visited,
+#watch-full-episodes a:active,
+#watch-full-episodes a:focus {
+	display: block;
+	background: transparent url(/web/20100113182613im_/http://www.fox.com/bones/images/watch_full_episodes.png) no-repeat 0 0;
+	width: 300px;
+	height: 122px;
+	text-indent: -1000em;
+}
+
+#watch-full-episodes a:hover {
+	background-position: -1px -127px;
+}
+
+/* videos */
+body.home #videos-info {
+	background: url(/web/20100113182613im_/http://www.fox.com/bones/images/bg_video_media_home.png) no-repeat left top;
+	height: 213px;
+	margin: 229px 0 0 -29px;
+}
+
+/* promo */
+body.home #show-promo {
+	background: transparent url(/web/20100113182613im_/http://www.fox.com/bones/images/show_promo_bg.png) no-repeat left top;
+	height: 150px;
+	padding: 0 0 0 45px;
+	margin: 7px 0 0 -73px;
+}
+body.home #show-promo h2 {
+	/* hidden */
+	text-indent: -1000em;
+	}
+body.home #show-promo .show-content {
+	width: 700px;
+	padding: 0;
+	margin: 0;
+}	
+/* item */
+body.home #show-promo ul {
+	padding: 0;
+	margin: 0;
+}
+body.home #show-promo li {
+	width: 210px;
+	text-align: center;
+	padding-top: 0;
+	margin: 0;
+}
+/* second column */
+body.home #show-promo li.view-b {
+}
+/* title */
+body.home #show-promo h3 {
+	font: 1.38em Arial, Helvetica, sans-serif;
+	font-weight: block;
+	text-transform: none;
+	text-align: left;
+	color: #e5e5e5;
+	padding-top: 1px;
+	margin-bottom: 4px;
+}
+/* heading */
+body.home #show-promo a.thumbnail {
+	background-image: none;
+	display: block;
+	width: 78px;
+	height: 58px;
+}
+body.home #show-promo a.thumbnail img {
+border: 1px solid #000;
+}
+body.home #show-promo a.thumbnail:hover img {
+	border: 1px solid #ce8f2f;
+}	
+body.home #show-promo p {
+	margin: 0;
+	color: #666;
+	font-size: 1.162em;
+	text-align: left;
+}
+body.home #show-promo a.more {
+	clear: left;
+	display: block;
+	background: transparent url(/web/20100113182613im_/http://www.fox.com/bones/images/call_to_action_bg.png) no-repeat left top;
+	width: 211px;
+	height: 23px;
+	font-size: 1.12em;
+	font-weight: bold;
+	color: #ce8f2f;
+	line-height: 23px;
+	text-align: left;
+	text-transform: none;
+	text-decoration: none;
+}
+body.home #show-promo a.more:hover {
+	color: #000;
+	text-decoration: none;
+}
+/* Community */
+#home-community {
+	position: relative;
+	width: 1015px;
+	text-align: center;
+	padding: 0;
+	margin: -22px 0 0 -27px;
+}
+/* content */
+#home-community .community-content {
+	background: transparent url(/web/20100113182613im_/http://www.fox.com/bones/images/bg_community.png) no-repeat left top;
+	height: 158px;
+	margin: 0 auto;
+	position: relative;
+	padding: 48px 0 0 20px;
+}
+/* heading */
+#home-community .community-content h2 {
+	position: absolute;
+	top: 8px;
+	left: 15px;
+	background: transparent url(/web/20100113182613im_/http://www.fox.com/bones/images/community.gif) no-repeat 14px 9px;
+	width: 330px;
+	height: 31px;
+	text-indent: -1000em;
+}
+/* thumbnails */ 
+#home-community .community-content ol {
+	display: block;
+	float: left;
+	width: 250px;
+	padding: 0;
+	margin: 0 0 0 10px;
+}
+
+#home-community .community-content ol li {
+	color: #666;
+	text-align: left;
+	padding: 0;
+	margin: 0 0 8px 0;
+}
+
+#home-community .community-content ol li a:link,
+#home-community .community-content ol li a:visited,
+#home-community .community-content ol li a:active,
+#home-community .community-content ol li a:hover {
+	color: #666;
+}
+
+#home-community .community-content ol li a:hover {
+	color: #ce8f2f;
+	text-decoration: none;
+}
+
+#home-community .community-content ol li em {
+	color: #ce8f2f;
+	padding: 0 4px 0 0;
+}
+
+/*  clip title */
+#home-community .community-content h3 {
+	font-size: 1em;
+	line-height: 1.2em;
+	color: #666;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 8px 0 8px 10px;
+}
+
+/* octions */
+#home-community .actions {
+	clear: both;
+	position: absolute;
+	bottom: 11px;
+	left: 22px;
+	width: 330px;
+	height: 20px;
+	font-size: 1.2em;
+}
+
+#home-community .actions li {
+	float: left;
+	padding-right: 15px;
+	display: list-item;
+}
+
+#home-community .actions a {
+	color: #fff;
+	float: left;
+}
+
+/* small promo */
+#small-promo-right {
+	position: absolute;
+	top: -10px;
+	right: 24px;
+	background: transparent url(/web/20100113182613im_/http://www.fox.com/bones/images/sm_promo_bg_home.png) no-repeat left top;
+	width: 296px;
+	height: 120px;
+	padding: 40px 0 0 25px;
+	margin: 12px auto 0 auto;
+	z-index: 100;
+}
+#small-promo-right h2 {
+	/* hidden */
+	text-indent: -1000em;
+}
+#small-promo-right .show-content {
+	padding: 0;
+	margin: 0;
+}	
+/* item */
+#small-promo-right .show-content ul {
+	padding: 0;
+	margin: 0;
+}
+#small-promo-right li {
+	width: 280px;
+	text-align: center;
+	padding-top: 0;
+	margin: 0;
+}
+/* title */
+#small-promo-right h3 {
+	font: 1.38em Arial, Helvetica, sans-serif;
+	font-weight: block;
+	text-transform: none;
+	text-align: left;
+	color: #ce8f2f;
+	padding-top: 3px;
+	margin-bottom: 4px;
+}
+/* heading */
+#small-promo-right a.thumbnail {
+	float: left;
+	background-image: none;
+	display: block;
+	width: 78px;
+	height: 58px;
+	margin: 0 8px 0 0;
+}
+#small-promo-right a.thumbnail img {
+border: 1px solid #666;
+}
+#small-promo-right a.thumbnail:hover img {
+	border: 1px solid #ce8f2f;
+}	
+#small-promo-right p {
+	margin: 0;
+	color: #fff;
+	font-size: 1em;
+	line-height: 1.15em;
+	text-align: left;
+	margin: 0 0 6px 0;
+}
+#small-promo-right a.more {
+	font-size: 1.12em;
+	font-weight: bold;
+	color: #ce8f2f;
+	text-align: left;
+	text-transform: none;
+	text-decoration: none;
+}
+#small-promo-right a.more:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#gallery-home {
+	margin: 7px 0 0 -28px;
+}
+
+/* -3- video-archive 
+ * ----------------------------------------------------------------------------------------------------*/
+#visual-archive {
+	position: relative;
+	background: transparent url(/web/20100113182613im_/http://www.fox.com/bones/images/bg_show_gallery.png) no-repeat left top;
+	width: 975px;
+	height: 198px;
+	}
+
+#visual-archive h2,
+#visual-archive h3 {
+	text-indent: -1000em;
+	}
+
+#visual-archive .thumbnails {
+	position: absolute;
+	top: 22px;
+	left: 35px;
+	width: 785px;
+	overflow: hidden;
+	}
+
+	#visual-archive .thumbnails ol {
+		width: 1000em;
+		}
+	
+	#visual-archive .thumbnails li {
+		margin: 0 8px 0 0;
+		float: left;
+		}
+
+	#visual-archive .thumbnails li.photo {
+		margin-top: 30px;
+		}
+
+#visual-archive .thumbnails-nav {
+	position: absolute;
+	right: 8px;
+	bottom: 6px;
+	}
+	
+	#visual-archive .thumbnails-nav ul li {
+		float: left;
+		margin: 0 8px 0 0;
+	}
+	#visual-archive .thumbnails-nav a {
+		/* common -> image replacement */
+		width: 9px;
+		height: 20px;
+		display: block;
+		text-indent: -1000em;
+		background: transparent url(/web/20100113182613im_/http://www.fox.com/bones/images/visual_archive_pagination.png) no-repeat 0 0;
+		}
+
+	
+	#visual-archive .thumbnails-nav a:hover,
+	#visual-archive .thumbnails-nav .active a {
+		background-position: 0 -23px;
+		}
+
+#visual-archive .actions {
+		position: absolute;
+		left: 20px;
+		bottom: 5px;
+	}
+	
+#visual-archive .actions a:link,
+#visual-archive .actions a:visited,
+#visual-archive .actions a:active {
+	color: #fff;
+	font-size: 1.17em;
+}
+
+#visual-archive .actions a:hover {
+	color: #ce8f2f;
+}
+
+	/** START visual-archive display logic **/
+	/* default: hide pagination controls */
+	#visual-archive .thumbnails{
+		height: 122px;
+		width: 790px;
+		position: relative;
+		margin-left: 0;
+		margin-right: -8px;
+	}
+	#visual-archive .thumbnails-nav {
+		display: none;	
+	}
+
+	/* state "has-pages": show pagination controls */
+	#visual-archive.has-pages .thumbnails-nav {
+		display: block;
+	}
+
+	/* state "has-pages": absolute position the pages */
+	#visual-archive.has-pages ol {
+		position: absolute;	
+		left: 0px;
+	}
+
+	#visual-archive.has-pages .thumbnails li {
+		position: absolute;	
+		overflow: hidden;
+	}
+
+	#visual-archive.has-pages .thumbnails li ul li {
+		position: static;	
+	}
+	/** END visual-archive display logic **/
+
+/*
+     FILE ARCHIVED ON 18:26:13 Jan 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:13:24 Jul 11, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.resolve: 30.416
+  exclusion.robots.policy: 0.134
+  PetaboxLoader3.datanode: 62.126 (4)
+  RedisCDXSource: 0.904
+  esindex: 0.009
+  CDXLines.iter: 14.046 (3)
+  exclusion.robots: 0.143
+  captures_list: 64.449
+  load_resource: 59.511
+  LoadShardBlock: 46.502 (3)
+*/

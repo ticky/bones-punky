@@ -1,0 +1,615 @@
+/*
+ *	Bones - page gallery
+ *
+ *  1. Bones main updates
+ *
+ * */
+
+
+/* -1- main updates 
+ * ----------------------------------------------------------------------------------------------------
+/* Content */
+#biosContent {
+	min-height: 0;
+}
+body.gallery #showContent{
+	position: relative;
+}
+body.gallery #show-header #ad {
+	position: absolute;
+	top: 593px;
+	left: 636px;
+	background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/images/ad_placeholder.png) no-repeat;
+	width: 330px;
+	height: 300px;
+	padding: 40px 50px 0 0;
+	z-index: 10000;
+}
+
+body.gallery #show-header #ad .ad {
+	width: 298px;
+	height: 250px;
+	padding: 0;
+	margin: 0;
+}
+
+		
+/* media input videos */
+body.gallery #show-gallery{
+	height: 570px;
+	margin-top: -15px;
+}
+/* -7- videos-info
+ * ----------------------------------------------------------------------------------------------------*/
+body.gallery #videos-info {
+	clear: both;
+	position: relative;
+	width: 1028px;
+	height: 208px;
+	text-align: left;
+	padding: 0;
+	margin: -63px auto 0 auto;
+	}
+	
+			
+/* -8- show-promo
+* ----------------------------------------------------------------------------------------------------*/
+body.gallery #show-promo {
+	background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/images/show_promo_bg_int.png) no-repeat left top;
+	width: 1075px;
+	height: 150px;
+	padding: 0 0 0 45px;
+	margin: 13px auto 0 auto;
+	}
+	body.gallery #show-promo h2 {
+		/* hidden */
+		text-indent: -1000em;
+		}
+	body.gallery #show-promo .show-content {
+		width: 700px;
+		padding: 0;
+		margin: 0;
+	}	
+	/* item */
+	body.gallery #show-promo ul {
+		padding: 0;
+		margin: 0;
+		}
+
+	body.gallery #show-promo li {
+		width: 210px;
+		text-align: center;
+		padding-top: 0;
+		margin: 0;
+		}
+
+		/* second column */
+		body.gallery #show-promo li.view-b {
+			}
+
+	/* title */
+	body.gallery #show-promo h3 {
+		font: 1.38em Arial, Helvetica, sans-serif;
+		font-weight: block;
+		text-transform: none;
+		text-align: left;
+		color: #e5e5e5;
+		padding-top: 1px;
+		margin-bottom: 4px;
+	}
+
+	/* heading */
+	body.gallery #show-promo a.thumbnail {
+		background-image: none;
+		display: block;
+		width: 78px;
+		height: 58px;
+		}
+		
+	body.gallery #show-promo a.thumbnail img {
+		border: 1px solid #000;
+		}
+		body.gallery #show-promo a.thumbnail:hover img {
+			border: 1px solid #ce8f2f;
+			}	
+
+	body.gallery #show-promo p {
+		margin: 0;
+		color: #666;
+		font-size: 1.162em;
+		text-align: left;
+		}
+
+	body.gallery #show-promo a.more {
+		clear: left;
+		display: block;
+		background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/images/call_to_action_bg.png) no-repeat left top;
+		width: 211px;
+		height: 23px;
+		font-size: 1.12em;
+		font-weight: bold;
+		color: #ce8f2f;
+		line-height: 23px;
+		text-align: left;
+		text-transform: none;
+		text-decoration: none;
+		}
+
+	body.gallery #show-promo a.more:hover {
+		color: #000;
+		text-decoration: none;
+		}
+		
+/* show gallery*/	
+#show-gallery {
+	background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/images/show_gallery_bg.png) no-repeat center 431px;
+	overflow: hidden; 
+	position: relative;
+	text-align: center;
+	padding: 0 0 13px 0;
+	margin: -30px auto 0 auto;
+}
+/* show gallery image + functionality */
+.show-gallery-image {
+	position: relative;
+	width: 477px;
+	height: 317px;
+	text-align: center;
+	margin: 0 auto;
+	z-index: 3000;
+}
+/* show gallery options */
+.show-gallery-image ul.image-options {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	float: left;
+	opacity: .8; 
+	padding: 6px 10px; 
+	color: #ce8f2f !important; 
+	}
+
+.show-gallery-image a.image-options:hover {
+	color: #fff !important;
+	}
+
+	.show-gallery-image ul.image-options li {
+		position: relative;
+		float: left;
+	}
+	.show-gallery-image ul.image-options:hover {
+		bottom: 35px;
+	}
+	.show-gallery-image ul.image-options li a {
+		float: left;
+		overflow: hidden;
+		padding: 0px 15px;
+		height: 30px;
+		line-height: 30px;
+		color: #ce8f2f !important;
+	}
+	.show-gallery-image ul.image-options li a:hover {
+		color: #fff !important;
+	}
+	.show-gallery-image ul.image-options:hover a {
+		color: #bfbfbf !important;
+	}
+	.show-gallery-image ul.image-options ul {
+		position: absolute;
+		top: 0;
+		left: -1000em;
+		width: 477px;
+		background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg/bg_gallery_photo_option.png) no-repeat left top;
+		height: 30px;
+	}
+	.show-gallery-image ul.image-options li:hover ul {
+		position: absolute;
+		top: 30px;
+		left: 0;
+	}
+	.show-gallery-image ul.image-options:hover ul li a {
+		color: #fff !important;
+	}
+	.show-gallery-image ul.image-options:hover ul li a:hover {
+		color: #ce8f2f !important;
+	}
+		/* show gallery image options - info  */		
+	.show-gallery-image .image-info {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 467px;
+		padding: 6px 10px 0 0;
+		height: 48px;
+		background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg/bg_gallery_rating.png) no-repeat left top;
+		text-align: right;
+	}
+	.show-gallery-image .image-info dl {
+		float: right;
+		padding: 3px 0;
+	}
+	.show-gallery-image ul.image-options li.email-photo div.photo-overlay,
+	.show-gallery-image ul.image-options li.download-photo div.photo-overlay {	
+		position: absolute;
+		background: #000;
+		opacity: .9;
+		z-index: 2000;
+		top: -288px;
+		left: -999em;
+		width: 477px;
+		height: 290px;
+	}
+	.show-gallery-image ul.image-options li.email-photo:hover div.photo-overlay {
+		left: 0;
+	}
+	.show-gallery-image ul.image-options li.download-photo:hover div.photo-overlay{
+		left: -204px;
+	}
+		.show-gallery-image ul.image-options li.email-photo:hover div.photo-overlay h3,
+		.show-gallery-image ul.image-options li.download-photo:hover div.photo-overlay h3{
+			margin: 95px 0 0 140px;
+			color: #999;
+		}
+		.show-gallery-image ul.image-options li.email-photo:hover div.photo-overlay ol,
+		.show-gallery-image ul.image-options li.download-photo:hover div.photo-overlay ol{
+			padding: 5px 0 0 125px ;
+		}
+		.show-gallery-image ul.image-options li.email-photo:hover div.photo-overlay ol li,
+		.show-gallery-image ul.image-options li.download-photo:hover div.photo-overlay ol li{
+			clear: left;
+		}
+		.show-gallery-image ul.image-options li:hover div.photo-overlay ol li a.cancel{
+			color: #999 !important;
+		}
+		.show-gallery-image ul.image-options li:hover div.photo-overlay ol li a.submit{
+			color: #a70000 !important;
+		}
+		.show-gallery-image ul.image-options li.email-photo:hover div.photo-overlay ol li input{
+			border: 1px solid #c2c2c2;
+			color: #666;
+			margin-left: 15px;
+		}
+		.show-gallery-image ul.image-options div.photo-overlay a.close-overlay{
+			position: absolute;
+			display: block;
+			top: -5px;
+			right: -38px;
+			width: 22px;
+			height: 22px;
+			background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico/ico_close.gif) no-repeat left top;
+			text-indent: -999em;
+		}
+		
+	.show-gallery-image .image-info dl dt,
+	.show-gallery-image .image-info dl dd{
+		float: left;
+		padding-right: 3px;
+	}
+	.show-gallery-image .image-info dl dd.rate{
+		padding-right: 0;
+	}
+	span.votes{
+		padding-right: 5px;
+		color: #c2c2c2;
+	}
+	span.ratings{
+		padding-left: 5px;
+		color: #c2c2c2;
+	}
+	/* styles for the star rater */	
+	.show-gallery-image .image-info dl dd ul.star-rating{
+		text-align: left;
+		float: left;
+		margin: 0px;
+		padding: 0px;
+		width: 75px;
+		height: 15px;
+		position: relative;
+		overflow: hidden;
+		z-index: 4000;
+		background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico/ico_votes.gif) repeat-x left bottom;		
+	}
+	.show-gallery-image .image-info dl dd.rate ul.star-rating{
+		background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico/ico_rating.gif) repeat-x left bottom;	
+		text-align: left;
+		float: left;
+		margin: 0px;
+		padding: 0px;
+		width: 75px;
+		height: 15px;
+		position: relative;
+		overflow: hidden;
+		z-index: 4000;	
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating li{
+		padding: 0px;
+		margin: 0px;
+		width: 15px;
+		height: 15px;
+		/*\*/
+		float: left;
+		/* */
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating li a,
+	.show-gallery-image .image-info dl dd.rate ul.star-rating li a{
+		
+		width: 15px;
+		height: 15px;
+		line-height: 13px;		
+		text-decoration: none;
+		text-indent: -1000em;
+		z-index: 20;
+		position: absolute;
+		padding: 0px;
+		overflow: hidden;
+		float: left;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating li a:hover{
+		background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico/ico_votes.gif) no-repeat left top;
+		z-index: 2;
+		left: 0px;
+		border: none;
+	}
+	.show-gallery-image .image-info dl dd.rate ul.star-rating li a:hover{
+		background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico/ico_rating.gif) no-repeat left top;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating a.one-star{
+		left: 0px;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating a.one-star:hover{
+		width: 15px;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating a.two-stars{
+		left: 15px;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating a.two-stars:hover{
+		width: 30px;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating a.three-stars{
+		left: 30px;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating a.three-stars:hover{
+		width: 45px;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating a.four-stars{
+		left: 45px;
+	}	
+	.show-gallery-image .image-info dl dd ul.star-rating a.four-stars:hover{
+		width: 60px;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating a.five-stars{
+		left: 60px;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating a.five-stars:hover{
+		width: 75px;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating li.current-rating{
+		background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico/ico_votes.gif) repeat-x left top;
+		position: absolute;
+		height: 15px;
+		display: block;
+		text-indent: -1000em;
+		z-index: 1;
+	}
+	.show-gallery-image .image-info dl dd.rate ul.star-rating li.current-rating{
+		background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico/ico_rating.gif) repeat-x left top;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating li.current-rating.five {
+		width: 75px;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating li.current-rating.four {
+		width: 60px;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating li.current-rating.three {
+		width: 45px;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating li.current-rating.two {
+		width: 30px;
+	}
+	.show-gallery-image .image-info dl dd ul.star-rating ul.star-rating li.current-rating.one {
+		width: 15px;
+	}
+	/* remove halo effect in firefox   */
+	.show-gallery-image .image-info dl dd ul.star-rating li a:active{
+		outline: none;
+	}
+/* show gallery navigation */	
+.show-gallery-navigation {
+	width: 209px;
+	text-align: center;
+	margin: 14px auto;
+}
+.show-gallery-navigation ul {
+	height: 15px;
+	text-align: center;
+	margin: 0 auto;
+}	
+.show-gallery-navigation ul li {
+	display: inline;
+	float: left;
+	position: relative;
+}
+.show-gallery-navigation ul li a {
+	background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/images/show_gallery_nav.gif) no-repeat left top;
+	height: 16px;
+	float: left;
+	display: inline;
+	text-indent: -1000em;
+}
+.show-gallery-navigation ul li a.photos {
+	width: 131px;
+	background-position: 0 0;
+}
+.show-gallery-navigation ul li a:hover.photos {
+	width: 131px;
+	background-position: 0 -17px;
+}
+.show-gallery-navigation ul li a.posters {
+	width: 76px;
+	background-position: -131px 0;
+}
+.show-gallery-navigation ul li a:hover.posters {
+	width: 76px;
+	background-position: -131px -17px;
+}
+/* show gallery thubmnail slides */
+#show-gallery .show-gallery-slides {
+	width: 974px;
+	text-align: center;
+	margin: 0 auto;
+}
+.show-gallery-slides .viewport {
+	position: relative;
+	width: 646px;
+	height: 100px;
+	text-align: center;
+	overflow: hidden;
+	margin: 0 auto 18px auto;
+}	
+/* thumbnails slides */
+.show-gallery-slides ol {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 680px;
+	height: 100px;
+	position: relative;
+	float: left;
+	z-index: 2200;
+	}
+
+	.show-gallery-slides ol li {
+		margin: 0 12px 0 0;
+		padding: 0px 0 25px;
+		float: left;
+		position: relative;
+		width: 118px;
+		height: 88px;
+		background: none;
+		}
+
+	.show-gallery-slides .content ol li a {
+		position: relative;
+		display: block;
+		height: 88px;
+		width: 118px;
+		color: #ce8f2f;
+		}
+		
+	.show-gallery-slides ol li a em{
+		display: block;
+		width: 121px;
+		height: 12px;
+		position: absolute;
+		top: 92px;
+		left: 0;
+		background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg/bg_gallery_reflection.jpg) no-repeat left top;
+		}
+
+
+	.show-gallery-slides ol li a:hover em{
+		background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg/bg_gallery_reflection_h.jpg) no-repeat left top;
+	}
+	
+
+.show-gallery-slides ol .thumbnail {
+	padding: 0;
+	background: none;
+	display: block;
+	height: 90px;
+	width: 120px;
+	}
+
+.show-gallery-slides ol .thumbnail img {
+	display: block;
+	width: 120px;
+	height: 90px;
+	border: 1px solid #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	}
+	.show-gallery-slides ol li a span {
+		display: block;
+		width: 118px;
+		height: 88px;
+		z-index: 100;
+		position: absolute;
+		top: 1px;
+		left: 1px;
+	
+	}
+	.show-gallery-slides ol li a:hover span{
+		background-image: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg/bg_enlarge_rollover.png);
+		border: 1px solid #ce8f2f;
+	}
+* html .show-gallery-slides ol li a:hover span {/* temporary height for IE6  will be removed and placed in IE6 styles file */
+     background-image: none;
+     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/bones/_ui/images/bg/bg_bio_rollover.png', sizingMethod='scale');
+     }
+	
+	.show-gallery-slides ol li.active a:hover span{
+		background-image: none;
+		border: none;
+	}
+
+	.show-gallery-slides ol li.active a.thumbnail img {
+		border-color: #ce8f2f;
+		}
+	.show-gallery-slides .viewport a.previous {
+			position: absolute;
+			top: 0;
+			left: -120px;
+		}
+	.show-gallery-slides .viewport a.next {
+			position: absolute;
+			top: 0;
+			right: -120px;
+		}
+	
+/* gallery page actions */
+body.gallery #show-header ul.actions {
+	position: absolute;
+	right: 0;
+	top: 100px;
+	font-size: 1.08em;
+	word-spacing: 0px;
+	text-align: right;
+	margin-right: 20px;	
+	overflow: hidden;
+}
+	body.gallery #show-header ul.actions li {
+		padding-left: 15px;
+		float: none;
+		display: block;
+		margin: 0;
+	}
+	body.gallery #show-header ul.actions li a {
+		color: #fff;
+	}
+	body.gallery #show-header ul.actions li a:hover {
+		color: #fff;
+	}
+
+/*
+     FILE ARCHIVED ON 18:26:07 Jan 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:13:24 Jul 11, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  CDXLines.iter: 12.128 (3)
+  captures_list: 153.521
+  exclusion.robots: 0.136
+  PetaboxLoader3.resolve: 21.04
+  exclusion.robots.policy: 0.126
+  RedisCDXSource: 82.316
+  esindex: 0.024
+  PetaboxLoader3.datanode: 95.683 (4)
+  load_resource: 88.889
+  LoadShardBlock: 55.695 (3)
+*/

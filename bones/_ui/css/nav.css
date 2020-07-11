@@ -1,0 +1,250 @@
+/* 
+ *	Fringe - navigation pre-release
+ *
+ * */
+
+/* show-navigation */
+#show-nav h3 {
+	/* hidden */
+	}
+
+#show-nav {
+	float: right;
+	margin: 16px 0px 0 -50px;
+	width: 794px;
+	}
+
+	#show-nav li {
+		float: left;
+		}
+
+	#show-nav a {
+		display: block;
+		height: 23px;
+		width: 80px;
+		background: transparent url(../images/nav-pre/bg.png) no-repeat left top;
+		text-align: left;
+		text-indent: -1000em;
+		}
+
+	/* info */
+	#show-nav a.info {
+		width: 60px;
+		background-position: 0 0;
+		}
+	#show-nav a.info:hover ,
+	body.info #show-nav a.info {
+		background-position: 0 -32px;
+		}
+
+	/* bios */
+	#show-nav a.bios {
+		width: 40px;
+		background-position: -60px 0;
+		}
+	#show-nav a.bios:hover ,
+	body.bios #show-nav a.bios {
+		background-position: -60px -22px;
+		}
+	
+	/* recaps */	
+	#show-nav a.blog {
+		width: 52px;
+		background-position: -130px 0;
+		}
+	#show-nav a.blog:hover ,
+	body.blog #show-nav a.blog {
+		background-position: -130px -22px;
+		}
+	
+	/* videos */
+	#show-nav a.videos {
+		width: 188px;
+		background-position: -210px 0;
+		}
+	#show-nav a.videos:hover ,
+	body.videos #show-nav a.videos {
+		background-position: -210px -22px;
+		}
+
+	/* gallery */
+	#show-nav a.gallery {
+		width: 48px;
+		background-position: -295px 0;
+		}
+	#show-nav a.gallery:hover ,
+	body.gallery #show-nav a.gallery {
+		background-position: -295px -22px;
+		}
+
+	/* features */
+	#show-nav a.features {
+		width: 61px;
+		background-position: -390px 0;
+		}
+	#show-nav a.features:hover ,
+	body.features #show-nav a.features {
+		background-position: -390px -22px;
+		}
+	
+	/* community */
+	#show-nav a.community {
+		width: 113px;
+		background-position: -495px 0;
+		}
+	#show-nav a.community:hover ,
+	body.community #show-nav a.community {
+		background-position: -495px -22px;
+		}
+	
+	/* newsletter */
+	#show-nav a.newsletter {
+		width: 73px;
+		background-position: -680px 0;
+		}
+	#show-nav a.newsletter:hover ,
+	body.newsletter #show-nav a.newsletter {
+		background-position: -680px -22px;
+		}
+	
+
+
+/* home nav 
+ * ----------------------------------------------------------------------------------------------------*/
+
+body.home #show-nav {
+	margin: 0;
+	float: none;
+	position: absolute;
+	left: 125px;
+	top: 10px;
+	z-index: 10;
+	width: 711px;
+	}
+
+body.home #show-nav a {
+	background: transparent url(../images/nav-home-pre/bg.png) no-repeat left top;
+	}
+
+	body.home #show-nav a.info,
+	body.home #show-nav a.info:hover
+		{
+		width: 55px;
+		background-position: 0 0;
+		}
+
+	body.home #show-nav a.bios, 
+	body.home #show-nav a.bios:hover
+		{
+		width: 55px;
+		background-position: -55px 0;
+		}
+		
+	body.home #show-nav a.blog, 
+	body.home #show-nav a.blog:hover
+		{
+		width: 60px;
+		background-position: -110px 0;
+		}
+		
+	body.home #show-nav a.videos ,
+	body.home #show-nav a.videos 
+		{
+		width: 75px;
+		background-position: -170px 0;
+		}
+		
+	body.home #show-nav a.gallery,
+	body.home #show-nav a.gallery:hover
+		{
+		width: 80px;
+		background-position: -245px 0;
+		}
+		
+	body.home #show-nav a.features,
+	body.home #show-nav a.features:hover
+		{
+		width: 95px;
+		background-position: -325px 0;
+		}
+		
+	body.home #show-nav a.community, 
+	body.home #show-nav a.community:hover 
+		{
+		width: 175px;
+		background-position: -420px 0;
+		}
+		
+	body.home #show-nav a.newsletter,
+	body.home #show-nav a.newsletter:hover
+		{
+		width: 115px;
+		background-position: -595px 0;
+		}
+	#navLine{
+		background-image:url(../../images/bg_nav_clear.gif);  
+		height:65px; 
+		position:absolute;
+		top:145px;
+		left:50%; 
+		margin-left:-1px; 
+		width:50%; 
+		background-position:left;
+		background-repeat:repeat-x; 
+		z-index:-1;
+	}
+	
+	/* new nav */
+	
+a#navInfo { background-image:url(../../images/nav_info_off.png); width:47px; height: 15px; display:block; }
+a#navInfo span { display:none; }
+a#navInfo:hover { background-image:url(../../images/nav_info_on.png); }
+
+a#navBios { background-image:url(../../images/nav_bios_off.png); width:51px; height: 15px; display:block; }
+a#navBios span { display:none; }
+a#navBios:hover { background-image:url(../../images/nav_bios_on.png); }
+
+a#navRecaps { background-image:url(../../images/nav_recaps_off.png); width:73px; height:14px; display:block; }
+a#navRecaps span { display:none; }
+a#navRecaps:hover { background-image:url(../../images/nav_recaps_on.png); }
+
+a#navWatch { background-image:url(../../images/nav_watch_off.png); width:205px; height: 15px; display:block; }
+a#navWatch span { display:none; }
+a#navWatch:hover { background-image:url(../../images/nav_watch_on.png); }
+
+a#navGallery { background-image:url(../../images/nav_gallery_off.png); width:67px; height: 15px; display:block; }
+a#navGallery span { display:none; }
+a#navGallery:hover { background-image:url(../../images/nav_gallery_on.png); }
+
+a#navFeatures { background-image:url(../../images/nav_features_off.png); width:79px; height: 15px; display:block; }
+a#navFeatures span { display:none; }
+a#navFeatures:hover { background-image:url(../../images/nav_features_on.png); }
+
+a#navCommunity { background-image:url(../../images/nav_community_off.png); width:131px; height: 15px; display:block; }
+a#navCommunity span { display:none; }
+a#navCommunity:hover { background-image:url(../../images/nav_community_on.png); }
+
+a#navNewsletter { background-image:url(../../images/nav_newsletter_off.png); width:92px; height: 15px; display:block; }
+a#navNewsletter span { display:none; }
+a#navNewsletter:hover { background-image:url(../../images/nav_newsletter_on.png); }
+/*
+     FILE ARCHIVED ON 18:26:10 Jan 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:13:24 Jul 11, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 0.98
+  exclusion.robots: 0.316
+  exclusion.robots.policy: 0.296
+  captures_list: 128.084
+  PetaboxLoader3.datanode: 54.33 (4)
+  LoadShardBlock: 106.412 (3)
+  esindex: 0.017
+  PetaboxLoader3.resolve: 82.069 (3)
+  CDXLines.iter: 15.91 (3)
+  load_resource: 34.979
+*/

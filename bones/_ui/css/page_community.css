@@ -1,0 +1,624 @@
+/*
+ *  bones - community page
+ *
+ *  1. main updates
+ *
+ */
+
+
+/* -1- main updates 
+ * ----------------------------------------------------------------------------------------------------*/
+body.community #show-header {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	}
+
+	body.community #content span.cr {
+		width: 675px;
+		height: 715px;
+		background-image: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg_content_r_community.jpg);
+		}
+
+body.community #content .inner{
+	background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg_community.jpg) no-repeat left top;
+	position: relative;
+	min-height: 714px;
+	width: 960px;
+	margin: -2px auto 0;
+	overflow: visible;
+	padding: 263px 0 10px;
+	}
+		
+	body.community #content{
+		background-image: none;
+	}	
+	
+	body.community #content .ir{
+		height: 55px; /* temp setting */
+		width: 663px;
+		margin: 0;
+		padding-bottom: 0;
+		background: #000 url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg_community.gif) no-repeat left top;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: -52px;
+	}
+	
+	body.community #content .inner span.lt{
+		background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg_community_lside.jpg) no-repeat left top;
+		top: 0;
+		left: -227px;
+		position: absolute;
+		display: block;
+		width: 227px;
+		height: 487px;
+	}
+
+.community ul.actions {
+	position: absolute;
+	top: 245px;
+	right: 0;
+	margin-right: -5px;
+	overflow: hidden;
+	z-index: 9999;
+	}
+	.community ul.actions li {
+		background:url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico_plus_divider.gif) no-repeat right center;	
+		padding-left: 13px;
+		display: list-item;
+		float: left;
+		margin-right: -10px;
+	}
+		.community ul.actions a.bookmark-button{
+				background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg_bookmark_share.png) no-repeat left top;
+				text-indent: -1000em;
+				display: block;
+				height: 9px;
+				width: 190px;
+				margin-right: -1px;
+			}
+			.community ul.actions a.bookmark-button:hover{
+				background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg_bookmark_share_h.png) no-repeat left top;
+			}
+		.community ul.actions a.grab-bones-button{
+			background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg_grab_bones.png) no-repeat left top;
+			text-indent: -1000em;
+			display: block;
+			height: 10px;
+			width: 158px;
+		}
+			.community ul.actions a.grab-bones-button:hover{
+				background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg_grab_bones_h.png) no-repeat left top;
+			}
+		
+	
+	.community #content .content-box{
+		background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg_content_box.png) repeat-y left top;
+		position: relative;
+		float: left;
+		width: 960px;
+		margin: 0 auto 10px;
+		padding-bottom: 0;
+	}
+	
+	
+/* show wiki */	
+	#show-wiki{
+		float: left;
+		width: 320px;
+		margin-right: 10px;
+		position: relative;
+		display: inline; /* temp IE6 fix */
+		min-height: 500px;
+		_height: 500px;/* temp IE6 fix */
+		background: #0f0f0f url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg_wiki_bottom.jpg) no-repeat left bottom;
+	}
+		#show-wiki h2,
+		#show-wiki h2 span{
+			position: relative;
+			display: block;
+			height: 51px;
+			width: 320px;
+			padding-bottom: 10px;
+			overflow: hidden;
+		}
+			#show-wiki h2 span{
+				position: absolute;
+				left: 0;
+				top: 0;
+				background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/hd_wiki.gif) no-repeat left top;
+			}
+		#show-wiki h3,
+		.community #show-community h3{
+			margin: 5px 0 0px 10px;
+			padding-bottom: 20px;
+		}	
+		#show-wiki p{
+			padding-bottom: 10px;
+			margin-left: 10px;
+			line-height: 1.3;
+		}
+		
+		#show-wiki h3{
+			font-size: 1em;
+			color: #bfbfbf;
+			text-transform: uppercase;
+		}
+		
+		#show-wiki a.more {
+			padding-left: 9px;
+			background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico_more.gif) no-repeat left center;
+			font-size: 1.083em;
+			line-height: 1.2em;
+			margin-left: 5px;
+			text-transform: uppercase;
+			}
+
+		#show-wiki a.more:hover {
+			color: #fff;
+			text-decoration: none;
+			}
+			#show-wiki span.ls {
+				display: block;
+				width: 45px;
+				height: 213px;
+				position: absolute;
+				left: -54px;
+				top: 7px;
+				background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg_community_lside.png) no-repeat left top;
+				z-index: 1000;
+				float: left;
+				}
+				
+		#show-wiki a.view {
+			padding-left: 12px;
+			background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico_view_a.png) no-repeat left center;
+			font-size: 1.083em;
+			line-height: 1.2em;
+			text-transform: uppercase;
+			position: absolute;
+			bottom: 20px;
+			right: 10px;
+		}
+		#show-wiki a.view:hover,
+		#show-buzz a.add:hover,
+		.community #show-community a.view:hover,
+		#show-widget ul a.view:hover,
+		.community #show-community li a:hover,
+		#show-buzz li a:hover{
+			text-decoration: none;
+			color: #fff;
+		}
+		#show-wiki span.wiki-f {
+			background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico_wiki_f.png) no-repeat left top;
+			position: absolute;
+			bottom: -2px;
+			left: -2px;
+			display: block;
+			width: 62px;
+			height: 69px;
+		}
+/* community */				
+	.community #show-community{
+		float: left;
+		width: 320px;
+		position: relative;
+		min-height: 500px;
+		_height: 500px;/* temp IE6 fix */
+		background-color: #091014;
+		margin: 0;
+	}
+		.community #show-community h2,
+		.community #show-community h2 span{
+			position: relative;
+			display: block;
+			height: 51px;
+			width: 327px;
+			padding-bottom: 10px;
+			overflow: hidden;
+		}
+			.community #show-community h2 span{
+				position: absolute;
+				left: 0;
+				top: 0;
+				background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/hd_discussions.gif) no-repeat left top;
+			}
+			.community #show-community h3{
+				font-size: 1em;
+				color: #bfbfbf;
+				text-transform: uppercase;
+			}
+			.community #show-community ul{
+				padding-bottom: 10px;
+				margin-left: 10px;
+				line-height: 1.6;
+			}
+			.community #show-community a.more {
+				padding-left: 9px;
+				background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico_more.gif) no-repeat left center;
+				font-size: 1em;
+				line-height: 1.2em;
+			}
+			.community #show-community a.view {
+				padding-left: 12px;
+				background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico_view_a.png) no-repeat left center;
+				font-size: 1.083em;
+				line-height: 1.2em;
+				text-transform: uppercase;
+				position: absolute;
+				bottom: 20px;
+				right: 20px;
+			}
+/* buzz */			
+	#show-buzz{
+		clear: left;
+		float: left;
+		width: 650px;
+		position: relative;
+		background-color: #0f0f0f;
+		min-height: 282px;
+	}			
+		#show-buzz h2,
+		#show-buzz h2 span{
+			position: absolute;
+			top: 0;
+			left: -33px;
+			display: block;
+			height: 85px;
+			width: 683px;
+			margin-bottom: 10px;
+			overflow: hidden;
+		}
+			#show-buzz h2 span{
+				position: absolute;
+				left: 0;
+				top: 0;
+				background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/hd_buzz.png) no-repeat left top;
+			}
+		#show-buzz ul{
+			float: left;
+			margin-top: 100px;
+			width: 213px;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			position: relative;
+			z-index: 1200;
+			line-height: 1.9;
+		}
+			#show-buzz ul.last{
+				width: 192px;
+				padding-left: 8px;
+			}
+		#show-buzz a.more {
+			padding-left: 8px;
+			background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico_more.gif) no-repeat left center;
+			font-size: 1em;
+			line-height: 1.1em;
+		}	
+		#show-buzz a.add {
+			padding-left: 12px;
+			background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico_add.gif) no-repeat left center;
+			font-size: 1.283em;
+			line-height: 1.2em;
+			text-transform: uppercase;
+			position: absolute;
+			bottom: 16px;
+			left: 10px;
+		}
+		#content .content-box span.buzz-flares{
+			display: block;
+			width: 126px;
+			height: 140px;
+			position: absolute;
+			right: 240px;
+			bottom: -84px;
+			background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg_flares.gif) no-repeat left top;
+			z-index: 10;
+			float: left;
+		}
+		#content .content-box span.widget-ornament{
+			display: block;
+			width: 163px;
+			height: 89px;
+			position: absolute;
+			right: 0px;
+			bottom: 2px;
+			background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg_widget.jpg) no-repeat right bottom;
+			z-index: 10;
+			float: left;
+		} 
+
+		.community #show-promo {
+			clear: both;
+			margin-top: 10px;
+			}
+		
+		.community .inner span.pt {
+			display: block;
+			width: 960px;
+			height: 57px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg_promo.png) no-repeat left top;
+			z-index: 10;
+			float: left;
+		}
+		
+		
+		.community #show-widget{
+			clear: left;
+			min-height: 498px;
+			float: left;
+			position: relative;
+		}
+			.community #show-widget ul.widget-nav{
+				position: absolute;
+				z-index: 1000;
+				line-height: 1.9;
+				padding: 5px 0 0 0px;
+				width: 300px;
+				left: 0px;
+				top: 356px;
+				display: none;/* hidden by default */
+			}
+			
+			.community #show-widget ul.widget-nav a.view-widget,#show-widget ul.widget-nav a.view-widget.collapsed{
+				padding-left: 25px;
+				background: #171717 url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico_collapsed.gif) no-repeat 10px center;
+				font-size: 1.283em;
+				text-transform: uppercase;
+				display: block;
+				margin-bottom: 1px;
+				height: 27px;
+				line-height: 27px;
+				overflow: hidden;
+			}
+			.community #show-widget ul.widget-nav a.view-widget.expanded{
+				background: #171717 url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico_expanded.gif) no-repeat 10px center;
+			}
+			.community #show-widget ul.widget-nav a.view-widget:hover{
+				color: #fff;
+				text-decoration: none;
+			}
+		/* clock */
+		.community #show-widget .clock {
+			overflow: hidden;
+			position: absolute;
+			left: 30px;
+			top: 283px;
+			z-index: 15;
+			width: 300px;
+			display: none;/* hidden by default */
+			}
+
+			.community #show-widget .clock .inner {
+				margin: 0;
+				padding: 0;
+				width: 300px;
+				height: 100px;
+				position: static;
+				background: none;
+				}
+
+			.community #show-widget .clock h3 {
+				position: absolute;
+				left: -1000em;
+				}
+
+			.community #show-widget .clock dl {
+				color: #FFF;
+				font-size: 2.166em;
+				font-family: "Futura","Trebuchet MS",Helvetica,Arial,Verdana,sans-serif;
+				line-height: 1.2em;	width: 300px;
+				}
+
+				.community #show-widget .clock dt {
+					position: absolute;
+					left: -1000em;
+					}
+
+				.community #show-widget .clock dd {
+					padding: 0 12px 0 0;
+					margin: 0;
+					display: inline;
+					background: transparent no-repeat right center; 
+					}
+
+					.community #show-widget .clock dd.days {
+						background-image: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico_clock_sep1.png);
+						}
+
+					.community #show-widget .clock dd.hours {
+						background-image: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico_clock_sep2.png);
+						}
+
+					.community #show-widget .clock dd.minutes {
+						background-image: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/ico_clock_sep2.png);
+						}
+
+				.community #show-widget .clock dd span {
+					color: #f7d700;
+					font-size: .615em;
+					line-height: 1em;
+					vertical-align: super;
+					}
+
+			.community #show-widget a.grab-it {
+				position: absolute;
+				right: 10px;
+				text-transform: uppercase;
+				top: 430px;
+				display: block;
+				background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bt_grabit.png) no-repeat left top;
+				z-index: 1000;
+				width: 95px;
+				height: 55px;
+				text-indent: -1000em;
+			display: none;/* hidden by default */
+			}
+				
+				
+			.community #show-widget .clock p {
+				position: absolute;
+				top: 35px;
+				left: 50px;
+				color: #999;
+				font: normal normal normal 1.25em/1em "Trebuchet MS",Helvetica,Arial,Verdana,sans-serif;
+				text-transform: uppercase;
+				}
+
+				.community #show-widget .clock p em {
+					color: #f7d700;
+					font-style: normal;
+					display: block;
+					margin: 3px -33px 0 0;
+					text-align: right;
+					position: relative;
+					}
+		
+		/* widget expandable bars */			
+		.community #show-widget .widget-photos,
+		.community #show-widget .widget-communities,
+		.community #show-widget .widget-news{
+			position: relative;
+			padding: 15px 18px 15px 17px;
+			background: #000;
+			width: 265px;
+			display: none;  /*hidden by default */
+		}
+		.community #show-widget .widget-news{display: block;}
+		.community #show-widget .widget-photos .photo-description{
+			padding: 9px 0;
+			float: left;
+			width: 265px;
+		}
+		.community #show-widget .widget-photos .photo-description a.previous-photo,
+		.community #show-widget .widget-photos .photo-description a.previous-photo span{
+			float: left;
+			width: 17px;
+			height: 20px;
+			display: block;
+			position: relative;
+			overflow: hidden;
+		}
+			.community #show-widget .widget-photos .photo-description a.previous-photo span{
+				background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bt_previous_photo.gif) no-repeat left top;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		.community #show-widget .widget-photos .photo-description a.next-photo,
+		.community #show-widget .widget-photos .photo-description a.next-photo span{
+			float: left;
+			width: 17px;
+			height: 20px;
+			display: block;
+			position: relative;
+			overflow: hidden;
+		}
+			.community #show-widget .widget-photos .photo-description a.next-photo span{
+				background: transparent url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bt_next_photo.gif) no-repeat left top;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		.community #show-widget .widget-photos .photo-description dl{
+			float: left;
+			padding-left: 10px;
+			width: 220px;
+			text-transform: uppercase;
+			font-size: 1.1em;
+		}
+		.community #show-widget .widget-photos .photo-description dt,
+		.community #show-widget .widget-photos .photo-description dd{
+			float: left;
+			color: #f7d700;
+			font-weight: normal;
+			padding-left: 5px;
+			
+		}
+		.community #show-widget .widget-photos .photo-description dd{
+			padding-left: 5px;
+			color: #fff;
+		}
+		.community #show-widget .widget-photos a.all-photos{
+			display: block;
+			text-align: right;
+			clear: both;
+			text-transform: capitalize;
+			font-size: 1.1em;
+		}
+		.community #show-widget .widget-communities h3{
+			color: #f7d700;
+			font-weight: normal;
+			text-transform: uppercase;
+		}
+		.community #show-widget .widget-communities ul{
+			position: relative;
+			margin-top: 10px;
+			min-height: 250px;
+		}
+			.community #show-widget .widget-communities ul a{
+				background: url(/web/20100113182607im_/http://www.fox.com/bones/_ui/images/bg_community_topic.gif) no-repeat left center;
+				color: #fff;
+				padding-left: 12px;
+			}
+			.community #show-widget .widget-communities ul li.community-link{
+				position: absolute;
+				bottom: 10px;
+				right: 0;
+			}
+				.community #show-widget .widget-communities ul li.community-link a{
+					color: #018fbf;
+					text-decoration: none;
+					background-image: none;
+					font-size: 1.1em;
+				}
+		.community #show-widget .widget-news ul{
+			line-height: 1.4;
+			min-height: 250px;
+			position: relative;
+		}
+			.community #show-widget .widget-news ul li{
+				margin-bottom: 10px;
+			}
+			.community #show-widget .widget-news ul a.read-more{
+				display: block;
+			}
+			.community #show-widget .widget-news ul li.all-news{
+				position: absolute;
+				bottom: 10px;
+				right: 0;
+			}
+				.community #show-widget .widget-news ul li.all-news a{
+					color: #018fbf;
+					text-decoration: none;
+					background-image: none;
+					font-size: 1.083em;
+				}
+		
+
+/*
+     FILE ARCHIVED ON 18:26:07 Jan 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:13:24 Jul 11, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots: 0.442
+  exclusion.robots.policy: 0.41
+  CDXLines.iter: 12.354 (3)
+  PetaboxLoader3.datanode: 247.556 (4)
+  PetaboxLoader3.resolve: 85.418 (2)
+  RedisCDXSource: 73.469
+  LoadShardBlock: 269.57 (3)
+  captures_list: 359.225
+  load_resource: 67.842
+  esindex: 0.02
+*/

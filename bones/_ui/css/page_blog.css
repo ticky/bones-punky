@@ -1,0 +1,54 @@
+/*
+ *  Bones - blog page 
+ *
+ *  1. bones updates
+ *
+ */
+
+/* -1- bones updates
+ * ----------------------------------------------------------------------------------------------------*/
+body.blog #interior-content {
+	background: transparent url(/web/20100113182608im_/http://www.fox.com/bones/images/content_bg.png) repeat-y center top;
+	width: 815px;
+	margin: -6px 0 0 53px;
+}
+
+body.blog #interior-content-top {
+	background: transparent url(/web/20100113182608im_/http://www.fox.com/bones/images/content_bg_top.png) no-repeat 11px top;
+	width: 695px;
+	color: #666;
+	font: 1em Arial, Helvetica, sans-serif;
+	line-height: 1.57em;
+	padding: 60px 50px 0 70px;
+}
+
+body.blog #interior-content h1 {
+	background: transparent url(/web/20100113182608im_/http://www.fox.com/bones/images/blog_title.gif) no-repeat;
+	width: 477px;
+	height: 30px;
+	text-indent: -1000em;
+	padding: 0;
+	margin: -10px 0 20px 100px;
+}
+
+/*
+     FILE ARCHIVED ON 18:26:08 Jan 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:13:25 Jul 11, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots: 0.198
+  esindex: 0.011
+  LoadShardBlock: 168.851 (3)
+  RedisCDXSource: 210.726
+  PetaboxLoader3.resolve: 40.908
+  PetaboxLoader3.datanode: 182.13 (4)
+  load_resource: 69.349
+  exclusion.robots.policy: 0.183
+  captures_list: 393.601
+  CDXLines.iter: 11.006 (3)
+*/

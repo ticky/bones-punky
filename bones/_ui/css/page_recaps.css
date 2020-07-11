@@ -1,0 +1,691 @@
+/*
+ *  Bones - recaps page 
+ *
+ *  1. bones updates
+ *  2. recaps page 
+ *
+ */
+
+/* -1- bones updates
+ * ----------------------------------------------------------------------------------------------------*/
+body.recaps #interior-content {
+	background: transparent url(/web/20100113182611im_/http://www.fox.com/bones/images/content_bg.png) repeat-y center top;
+	width: 815px;
+	margin: -6px 0 0 53px;
+}
+
+body.recaps #interior-content-top {
+	background: transparent url(/web/20100113182611im_/http://www.fox.com/bones/images/content_bg_top.png) no-repeat 11px top;
+	width: 695px;
+	color: #666;
+	font: 1em Arial, Helvetica, sans-serif;
+	line-height: 1.57em;
+	padding: 60px 50px 0 70px;
+}
+
+body.recaps #interior-content h1 {
+	background: transparent url(/web/20100113182611im_/http://www.fox.com/bones/images/recaps_title.png) no-repeat;
+	width: 110px;
+	height: 35px;
+	text-indent: -1000em;
+	padding: 0;
+	margin: -10px 0 20px 100px;
+}
+
+/* -2- recaps page
+ * ----------------------------------------------------------------------------------------------------*/
+
+.show-recaps-container {
+	float: right;
+	width: 761px;
+}
+
+#show-recaps-slides {
+	margin-top: -50px;
+	width: 760px;
+	position: relative;
+	height: 300px;
+}
+
+#show-recaps-slides .actions {
+	position: absolute;
+	right: 0px;
+	bottom: -1px;
+	font-size: 1em; 
+	line-height: 1em;
+	z-index: 1000;
+	float: right;
+}
+
+#show-recaps-slides .actions li {
+	display: list-item;
+	float: right;
+	clear: right;
+	margin-bottom: 6px;
+	margin-right: -10px;
+	display: inline;
+}
+#show-recaps-slides .actions a.bookmark-button{
+	background: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/bg_bookmark_share.png) no-repeat left top;
+	text-indent: -1000em;
+	display: block;
+	height: 9px;
+	width: 190px;
+}
+#show-recaps-slides .actions a.bookmark-button:hover{
+	background: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/bg_bookmark_share_h.png) no-repeat left top;
+}
+#show-recaps-slides .actions a.grab-fringe-button{
+	background: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/bg_grab_fringe.png) no-repeat left top;
+	text-indent: -1000em;
+	display: block;
+	height: 10px;
+	width: 158px;
+}
+#show-recaps-slides .actions a.grab-fringe-button:hover{
+	background: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/bg_grab_fringe_h.png) no-repeat left top;
+}
+
+	/* viewport for page transitions */
+	#show-recaps-image{
+		width: 452px;
+		height: 280px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		overflow: hidden;
+	}
+
+	#show-recaps-flash{
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 300px;
+		height: 305px;
+		z-index: 10;
+	}
+	span.fig-divider{
+		display: block;
+		position: absolute;
+		left: 448px;
+		top: 0;
+		width: 11px;
+		height: 263px;
+		z-index: 11;
+		background: url(/web/20100113182611im_/http://www.fox.com/bones/images/bg_recaps_figure.png) no-repeat left top;
+	}
+	span.fig-bottom{
+		display: block;
+		position: absolute;
+		bottom: 0;
+		width: 759px;
+		height: 41px;
+		background: url(/web/20100113182611im_/http://www.fox.com/bones/images/bg_recaps_figure2.png) no-repeat left top;
+		z-index: 10;
+	}
+	#show-recaps-slides .play-nav {
+		position: absolute;
+		left: 365px;
+		bottom: -10px;
+		z-index: 100;
+	}
+	#show-recaps-slides .play-nav p span {
+		background: url(/web/20100113182611im_/http://www.fox.com/bones/images/bg_page_arr.gif) no-repeat center center;
+		display: block;
+		width: 17px;
+		height: 17px;
+		position: relative;
+		left: 0;
+		margin: 10px 0 0 9px;
+		_margin-left: 4px; /* IE6 issue fix */
+		text-indent: -1000em;
+		}
+	#show-recaps-slides .play-nav p span a{
+		display: block;
+		width: 17px;
+		height: 17px;
+		position: relative;
+	}	
+
+	#show-recaps-slides .play-nav .count {
+		position: absolute;
+		left: -9999px;
+	}
+	
+	.recaps-mask {
+		width: 450px;
+		height: 280px;
+		position: absolute;
+		left: 2px;
+		top: 0;
+		z-index: 9;
+		background: url(/web/20100113182611im_/http://www.fox.com/bones/images/bg_slide_mask.png) no-repeat left top;
+	}
+	
+	
+/** START show-recaps-slides display logic **/
+/* default: hide pagination controls */
+#show-recaps-slides .play-nav {
+	display: none;	
+}
+
+/* state "has-pages": show pagination controls */
+#show-recaps-slides.has-pages .play-nav {
+	display: block;	
+}
+
+/* state "has-pages": absolute position the pages */
+#show-recaps-slides.has-pages ol {
+	position: absolute;	
+	left: 0px;
+	z-index: 50;
+}
+ 
+	/*  recaps Content */
+	#recapsContent {
+		position: relative;
+		background: transparent url(/web/20100113182611im_/http://www.fox.com/bones/images/bg.jpg) no-repeat center top;
+		padding: 0 0 10px;
+		overflow: hidden;
+		z-index: 5;
+	}
+
+	/* recaps profile title*/
+	h3 {
+		font-size: 18px;
+		color: #7b7b7b;
+		padding: 0;
+		margin: 0 0 20px 0;
+	}
+	
+	/* recaps text */
+	#recaps-text {		
+		background: transparent url(/web/20100113182611im_/http://www.fox.com/bones/images/recaps_smoking_gun.png) no-repeat -10px 32px;
+		width: 425px;
+		min-height: 900px;
+		height: auto !important;
+		height: 900px;
+		padding: 0 0 0 202px;
+		margin: 0 0 0 -102px;
+	}
+	
+	#recaps-text a:link, 
+	#recaps-text a:visited, 
+	#recaps-text a:active {
+		color: #ce8f2f;
+		text-decoration: none;
+	}
+
+ 	#recaps-text a:hover {
+		color: #000;
+		text-decoration: none;
+	}
+	
+	#recaps-text p {
+		margin: 0 0 12px 0;
+	}
+
+	#recaps-text .pages div { 
+		display: none;		
+	}
+
+	#recaps-text .pages div.currentpage { 
+		display: block;
+	}
+
+
+/* recaps profile nav */
+#recapsProNavBox {
+	position: absolute;
+	width: 216px;
+	left: -7px;
+	top: 156px;
+	z-index: 500;
+}
+
+#recapsProNavBox .recaps-top {
+	background: transparent url(/web/20100113182611im_/http://www.fox.com/bones/images/recaps_nav_bg_top.png) no-repeat left top;
+	height: 19px;
+}
+
+#recapsProNavBox #recapNav {
+	background: transparent url(/web/20100113182611im_/http://www.fox.com/bones/images/recaps_nav_bg.png) repeat-y left bottom;
+	width: 216px;
+	padding: 0 0 60px 0;
+}
+
+/* video data + full episodes*/
+	#recapsVideoData {
+	background: transparent url(/web/20100113182611im_/http://www.fox.com/bones/images/video_data_full_episodes_placeholder.png) no-repeat;
+	width: 687px;
+	height: 235px;
+	position: relative;
+	z-index: 7;
+	left: 70px;
+}
+
+/* video data + full episodes*/
+	#videoTh {
+	background: transparent url(/web/20100113182611im_/http://www.fox.com/bones/images/content_bg_bot.png) no-repeat; 
+	width: 815px; 
+	height: 284px;
+}
+
+#bioNav {
+	width: 188px;
+	position: relative;
+	left: 0px; 
+	top: 0px;
+	margin: -25px 0 0 0;
+	font: 38px Helvetica, Arial, sans-serif normal;
+	color: #000;
+	text-decoration: none;
+}
+
+/* RECAPS */
+.recapPic {height:75px;width:213px;margin:75px 0 0 -15px;}
+.recapDropdown {width:140px;font-size: 11px;padding: 0;}
+.recapNavBody .recapDrop {
+	width: 140px;
+color: #fff; padding:0 20px 20px 0;
+}
+.recapNavBody .recapDrop h2{
+	padding: 0;
+	margin: 0;	
+	font-size: 1.55em; 
+	font-weight: normal;
+	line-height: 1;
+}
+#recapNav {width:188px; position:relative; left:0px; top:0px;margin:0px 0 0 0}
+#recapNavBG {width:188px; background-image:}
+.recapNavTitle {font-family:Helvetica, Arial, sans-serif; font-size:18px;margin:20px 0 0 0;color:#bf692e;}
+.recapNavBody {width:140px;padding:8px 0;margin:0 0 0 35px;}
+select.recapDropdown, input{
+ background-color: #fff;
+ color: #555;
+ padding:0 0px 0 0;
+}
+
+#epiNavDiv {
+	float: left;
+	width: 220px;
+	height: 1000px;
+}
+.recapHex {
+	width: 268px;
+	height: 208px
+}
+		
+.recapsAirDate {
+	display: block;
+	font-size: 14px;
+}
+
+#recapscontentBgBot {
+	position: absolute;
+	top: 674px;
+	left: 8px;
+	z-index: 22;
+}
+
+/* -2- show-episodes 
+ * ----------------------------------------------------------------------------------------------------*/
+  
+#show-episodes {
+	width: 636px;
+	font-size: 1.083em;
+	line-height: 1.2em;
+	}
+
+	/* season selector */
+	#show-episodes .seasons-nav {
+		margin: 0 0 10px;
+		border: 1px solid #4f4a43;
+		border-width: 1px 0;
+		padding: 5px 0;
+		height: 2.3em;
+		position: relative;
+		}
+
+		#show-episodes .seasons-nav h3 {
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			left: 0px;
+			top: -14px;
+			display: inline;
+			color: #4f4a43;
+			font-size: .923em;
+			font-weight: normal;
+			line-height: 13px;
+			text-decoration: underline;
+			}
+
+		#show-episodes .seasons-nav ol {
+			}
+
+		#show-episodes .seasons-nav li {
+			line-height: 2.3em;
+			float: left;
+			vertical-align: bottom;
+			}
+			
+		#show-episodes .seasons-nav li span {
+			margin: 0 5px;
+			font-size: 2.308em;
+			line-height: 1em;
+			color: #4f4a43;
+		}
+		
+		#show-episodes .seasons-nav h2 {
+			display: inline;
+			font-size: 2.308em;
+			line-height: 1em;
+			color: #4f4a43;
+			}
+		
+		#content #show-episodes .seasons-nav a {
+			color: #a70000;
+			font-size: 1.385em;
+			font-weight: bold;
+			line-height: 1.667em;
+			float: left;
+			margin-top: 5px;
+			}
+
+	/* episodes */
+	#show-episodes .episodes li {
+		margin: 0 0 4px;
+		padding: 17px 0 0;
+		position: relative;
+		background: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/bg/bg_recaps_corners_inact_top.gif) no-repeat 0 0;
+		}
+
+		/* expanded episode box */
+		#show-episodes .episodes li.expanded {
+			/*padding: 8px 0 0;*/
+			background-image: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/bg/bg_recaps_corners_top.gif);
+			background-position: 0 7px;
+			}
+ 
+		/* override list items */
+		#show-episodes .episodes li li {
+			padding: 0;
+			margin: 0;
+			float: none;
+			position: static;
+			width: auto;
+			background: none;
+			}
+		
+	/* epsiode inner wrapper */ 
+    #show-episodes .episodes li .wrap {
+		/* common -> clearfix */
+		width: 478px;
+		overflow: hidden;
+		margin: 0 auto;
+		padding: 0 10px 0 132px;
+		background: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/bg/bg_recaps_episode_inact.gif) repeat 0 0;
+		}
+
+		#show-episodes .episodes li:hover .wrap {
+		  background: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/bg/bg_recaps_episode_h.gif) repeat 0 0;
+		}
+	
+		#show-episodes .episodes li.expanded .wrap {
+			background-image: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/bg/bg_recaps_episode.gif);
+			}
+ 
+	/* bottom corners */
+    #show-episodes .episodes li .ep-bottom {
+		clear: both;
+		height: 10px;
+		margin: -1px 0 0;
+		background: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/bg/bg_recaps_corners_inact_bottom.gif) no-repeat 0 0;
+		}
+	
+		#show-episodes .episodes li.expanded .ep-bottom {
+			clear: both;
+			background: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/bg/bg_recaps_corners_bottom.gif) no-repeat 0 0;
+			}
+   
+	/* epsiode thumbnail */
+    #show-episodes .episodes .thumb {
+		margin: -42px 0 0 -130px;
+		padding: 0 0 10px;
+		float: left;
+		background: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/bg/bg_recaps_thumb2.gif) no-repeat bottom left;
+		}
+	
+		#show-episodes .episodes .expanded .thumb {
+			background-image: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/bg/bg_recaps_thumb.gif);
+			margin-top: -32px;
+			}
+	  
+    
+	/* episode title */
+    #show-episodes h3 {
+		font-size: 1.462em;
+		padding: 10px 0;
+		color: #ef0903;
+		}
+
+		#show-episodes .expanded h3 {
+			color: #bfbfbf;
+			padding: 10px 0 0;
+			}
+	 
+	/* epsiode actions */ 
+    #show-episodes .episode-actions {
+		margin: 15px 0;
+		font-weight: bold;
+		}
+		
+		#content #show-episodes .episode-actions a {
+			color: #ef0903;
+			}
+			
+		#content #show-episodes .episode-actions a:active,
+		#content #show-episodes .episode-actions a:hover {
+			color: #fff;}	
+
+    #show-episodes li p {
+		margin: 0 0 1em;
+		line-height: 1.3;
+		}
+   
+	/* episode more link */
+    #content #show-episodes li p.more a {
+		color: #ef0903;
+		padding-left: 12px;
+		background: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/ico/more_info.gif) no-repeat 0 50%;
+		}
+	  
+		#content #show-episodes li p.more a:hover {
+			color: #fff;
+			background: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/ico/more_info_h.gif) no-repeat 0 50%;
+      }
+    
+	/* episode pagination */
+    #show-episodes .episodes .pagination {
+		float: left;
+		margin: 10px 0;
+		}
+		
+		#show-episodes .episodes .pagination li {
+			float: left;
+			padding: 0 5px 0 0;
+			}
+		
+        #content #show-episodes .pagination li a:link {
+			color: #ef0903;
+			}
+
+					
+    	#content #show-episodes .pagination li a:visited {
+			color: #ef0903;
+			}
+			
+		#content #show-episodes .pagination li a:active,
+		#content #show-episodes .pagination li.selected a,
+		#content #show-episodes .pagination li.inactive a,
+		#content #show-episodes .pagination li.selected a:hover,
+		#content #show-episodes .pagination li.inactive a:hover {
+			color: #4f4a43;
+			}
+			
+		#content #show-episodes .pagination li a:hover {
+			color: #fff;
+			}
+	
+        #content #show-episodes .pagination li a.prev {
+			padding-left: 20px;
+			background: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/ico/arr_left.gif) no-repeat 0 50%;
+			}
+			
+		#content #show-episodes .pagination li a.prev:active,
+		#content #show-episodes .pagination li.selected a.prev:hover,
+		#content #show-episodes .pagination li.inactive a.prev,
+		#content #show-episodes .pagination li.inactive a.prev:hover {
+			background-image: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/ico/arr_left_on.gif);
+			}
+			
+		#content #show-episodes .pagination li a.prev:hover {
+			background-image: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/ico/arr_left_h.gif);
+			}
+			
+        #content #show-episodes .pagination li a.next {
+			padding-right: 20px;
+			background: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/ico/arr_right.gif) no-repeat 100% 50%;
+			}
+			
+      	#content #show-episodes .pagination li a.next:active,
+		#content #show-episodes .pagination li.inactive a.next{
+			background-image: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/ico/arr_right_on.gif);
+			}
+			
+		#content #show-episodes .pagination li a.next:hover {
+			background-image: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/ico/arr_right_h.gif);
+			}
+
+    #show-episodes .episodes .close {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      text-indent: -9999px;
+      display: block;
+      width: 21px;
+      height: 20px;
+      background: url(/web/20100113182611im_/http://www.fox.com/bones/_ui/images/ico/ico_close_2.gif) no-repeat 0 0;
+    }
+
+	/** START recaps display logic **/
+
+	/* default: hide [episode-actions, pages, pagination, close button] */
+	#show-episodes .episode-actions,
+	#show-episodes .pages div, 
+	#show-episodes .episodes .pagination,
+	#show-episodes .episodes .close {
+		display: none;
+	}
+
+	/* state 'expanded': hide [more info button, blurb] */
+	#content #show-episodes li.expanded p.more,
+	#show-episodes li.expanded p.blurb {
+		display: none;
+	}
+
+	/* state 'expanded': show [episode-actions, current page, pagination, close button] */
+	#show-episodes li.expanded .episode-actions,
+	#show-episodes li.expanded .pages .currentpage,
+	#show-episodes .episodes li.expanded .close {
+		display: block;
+	}
+
+	/* state 'has-pages': show pagination */
+	#show-episodes li.expanded .has-pages .pagination {
+		display: block;		
+	}
+	
+	#show-episodes li .pages div{
+		width: 478px;
+	}
+	
+	#show-episodes .thumbnails-nav{
+		display: none;
+	}
+	
+
+	/** END recaps display logic **/
+
+/* -3- ad updates 
+ * ----------------------------------------------------------------------------------------------------*/
+
+body.recaps .ad {
+	margin: 0 0 0px;
+	padding: 5px;
+	float: none;
+	display: block;
+	height: auto;
+	width: auto;
+	}
+
+	body.recpas .ad img {
+		float: none;
+		margin: 0;
+		padding: 0;
+		display: block;
+		}
+
+.pagination {
+	width: 500px;
+	font-size: 1em;
+	color: #ce8f2f;
+	margin: 18px 0 0 0;
+}
+
+.pagination li {
+	display: inline;
+	text-transform: uppercase;
+}
+
+.pagination a:link,
+.pagination a:visited,
+.pagination a:active {
+	color: #ce8f2f;
+	padding: 0 5px 0 0;
+	text-decoration: none;
+}
+
+.pagination a:hover,
+.pagination li.selected {
+	color: #000;
+	text-decoration: none;
+}
+
+.pagination li.inactive {
+	color: #fff;
+	display: none;
+}
+
+/*
+     FILE ARCHIVED ON 18:26:11 Jan 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:13:24 Jul 11, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots: 0.189
+  exclusion.robots.policy: 0.177
+  CDXLines.iter: 12.741 (3)
+  PetaboxLoader3.datanode: 39.296 (4)
+  PetaboxLoader3.resolve: 18.992
+  RedisCDXSource: 84.151
+  LoadShardBlock: 31.607 (3)
+  captures_list: 131.937
+  load_resource: 29.816
+  esindex: 0.017
+*/

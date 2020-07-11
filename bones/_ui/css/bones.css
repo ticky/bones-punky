@@ -1,0 +1,50 @@
+/*
+ *	Bones
+ *
+ * */
+
+/* common elements */
+@import url(common.css);
+
+/* overrides for fox common stylesheets */
+@import url(base.css);
+
+/* show-header */
+@import url(header.css);
+
+/* show-nav */
+@import url(nav.css);
+
+/* PAGES 
+ * --------------------------------------------------*/
+
+/* home */
+@import url(page_home.css);
+
+/* info */
+@import url(page_info.css);
+
+/* bios*/
+@import url(page_bios.css);
+
+/* recaps */
+@import url(page_recaps.css);
+
+/* gallery */
+@import url(page_gallery.css);
+
+/* features */
+@import url(page_features.css);
+ 
+/* music */
+@import url(page_music.css);
+
+/* quotes */
+@import url(page_quotes.css);
+
+/* quotes */
+@import url(page_blog.css);
+
+/* community */
+@import url(page_community.css);
+

@@ -1,0 +1,859 @@
+/* !!!! USE ONE PROPERTY/ROW */
+
+/*
+ *		Fringe - common elements 
+ *
+ *      1. clearfix
+ *      2. image replacement
+ *      3. hidden elements
+ *
+ *		4. actions
+ *		5. play-nav 
+ *		6. thumbnails
+ *
+ *		7. videos-info
+ *		8. show-promo
+ *
+ * */
+
+
+/* -1- clearfix 
+ * ----------------------------------------------------------------------------------------------------*/
+
+/* for base */
+#content .inner:after,
+
+/* for common */
+#videos-info:after, #videos-info ol:after,
+#show-promo:after,
+#show-promo ul:after,
+
+/* for homepage */
+#gallery-info ol:after,
+#community-info .blog:after,
+#community-info .forum:after,
+#blog-info .content:after,
+#downloads-info ol:after,
+
+/* for bio */
+#show-bios ol:after, 
+
+/* for recaps */
+.recaps #content .inner:after,
+
+/* for community */
+body.community #content .content_box:after, 
+
+/* for features */
+#wallpapers-info ol:after,
+#icons-info ol:after
+	{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+
+
+/* -2- image replacement
+ * ----------------------------------------------------------------------------------------------------*/
+
+/* for base */
+.ir,
+#content span.cr, 
+#content span.ibl,
+
+/* for common */
+.play-nav li a, .play-nav span.fig-play, .icon a,
+
+#videos-info .sh_l, #videos-info .sh_bl, #videos-info .sh_br,
+#videos-info span.b,
+#show-promo .sh_l, #show-promo .sh_r
+#show-promo span.fig-frog,
+#show-promo span.fig-flower,
+#gallery-info .sh_l,
+#community-info .sh_l,
+#downloads-info .sh_r,
+
+/* for header  */
+#show-header a.logo, #show-header h1 a, #show-header p.motto, #show-header a.play-now,
+#show-header .fpo,
+#show-header .clock a.add ,
+#show-highlights .nav a,
+
+/* for home */
+#videos-info h2, 
+#gallery-info h2,
+#community-info h2,
+
+/* for info */
+body.info #content span.cl, 
+
+/* for bios */
+.bios #content .inner span.il,
+
+/* for gallery */
+#gallery .browser .nav a, /* can be deleted */
+
+/* for features */
+body.features span,spot_1,
+#wallpapers-info h2,
+#wallpapers-info .sh_l,
+#icons-info h2,
+#features-promo .sh_l
+	{
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	text-indent: -1000em;
+	background: transparent no-repeat left top;
+	}
+
+
+/* -3- hidden elements 
+ * ----------------------------------------------------------------------------------------------------*/
+
+/* for base */
+.hidden,
+
+/* for common */
+.play-nav h3, .play-nav p span,
+.wallpaper .info h3,
+#show-promo h2,
+
+/* show header */
+#show-highlights h2,
+#show-highlights .nav h3,
+#show-header .clock h3,
+#show-header .clock dt,
+#show-header .community-tools h3,
+#show-nav h3,
+
+
+
+/* for home */
+#gallery-info h2,
+#blog-info h2,
+#bios-info h2,
+#downloads-info h2,
+#bios-info .heroes dt,
+
+/* for features */
+#features-promo h2
+	{
+	position: absolute;
+	left: -1000em;
+	text-align: left;
+	}
+
+
+/* -4- actions 
+ * ----------------------------------------------------------------------------------------------------*/
+
+ul.actions {
+	font-size: 1.08em;
+	/* line-height: 1.4em;
+	 text-transform: uppercase; */
+	}
+
+	ul.actions li {
+		margin: 0 5px 0 0;
+		display: inline;
+		}
+
+	ul.actions a {
+		padding: 0 0 0 12px;
+		background: transparent no-repeat left center;
+		color: #ce8f2f;
+		}
+
+	ul.actions a:hover {
+		color: #FFF;
+		text-decoration: none;
+		}
+
+	ul.actions a.grab-widget {
+		background-image:url(../images/ico_plus_divider.gif);	
+		}
+
+
+
+/* -6- media thumbnails 
+ * ----------------------------------------------------------------------------------------------------*/
+
+	.wallpaper,
+	.screensaver,
+	.icon,
+	.photos li,
+	.photo,
+	.poster
+		{
+		position: relative;
+		padding-bottom: 32px;
+		}
+
+
+	/* thumbnail 
+	 * ------------------------------------------------------------------------------------------------*/
+	.wallpaper .thumbnail,
+	.screensaver .thumbnail,
+	.photo .thumbnail,
+	.poster .thumbnail
+		{
+		margin: -16px 0 0 -19px;
+		padding: 16px 0 0 19px;
+		height: 100px;
+		width: 170px;
+		}
+
+		.icon .thumbnail 
+			{
+			height: 49px;
+			width: 49px;
+			background-image: url(../images/bg_thumbnail_icon.png);
+			}
+
+		.photo .thumbnail 
+			{
+			width: 120px;
+			height: 90px;
+			}
+
+		.poster .thumbnail
+			{
+			width: 80px;
+			height: 120px;
+			}
+
+		.wallpaper img,
+		.screensaver img,
+		.icon img,
+		.photos img,
+		.photo img,
+		.poster img
+			{
+			border: 1px solid #333;
+			display: block;
+			width: 168px;
+			height: 98px;
+			position: relative;
+			z-index: 1;
+			}
+
+			.icon img {
+				width: 47px;
+				height: 47px;
+				}
+
+			.photos img,
+			.photo img
+				{
+				width: 118px;
+				height: 88px;
+				}
+
+			.poster img
+				{
+				width: 78px;
+				height: 118px;
+				}
+
+	/* overlay 
+	 * ------------------------------------------------------------------------------------------------*/
+	.wallpaper .info,
+	.screensaver .info,
+	.icon a,
+	.photos a,
+	.photo a,
+	.poster a
+		{
+		width: 168px;
+		height: 98px;
+		display: none;
+		position: absolute;
+		left: 1px;
+		top: 1px;
+		z-index: 2;
+		color: #ce8f2f;
+		background: transparent url(../images/bg_overlay.png) repeat left top;
+		}
+
+		.icon a {
+			/* image replacement */
+			width: 47px;
+			height: 47px;
+			color: #ce8f2f;
+			background-image: url(../images/bg_overlay_icon.png);
+			}
+
+		.photos a,
+		.photo a,
+		.poster a
+			{
+			padding: 37px 0 ;
+			width: 118px;
+			height: 14px;
+			color: #ce8f2f;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			}
+
+			.poster a
+				{
+				padding: 52px 0;
+				width: 78px;
+				}
+
+		
+		/* overlay content */
+		.wallpaper .info li,
+		.screensaver .info li
+			{
+			float: none;
+			margin: 3px 0;
+			}
+
+		.wallpaper .info a,
+		.screensaver .info a
+			{
+			color: #ce8f2f;
+			line-height: 1.2em;
+			}
+
+
+		.wallpaper .info a:hover,
+		.screensaver .info a:hover
+			{
+			color: #fff;
+			text-decoration: none;
+			}
+
+		/* wallpaper content */
+		.wallpaper .info
+			{
+			padding: 18px 0 0 50px;
+			width: 118px;
+			height: 80px;
+			}
+
+		.wallpaper .info h3
+			{
+			/* hidden*/
+			}
+			
+		/* screensaver content */
+		.screensaver .info {
+			padding-top: 35px;
+			height: 63px;
+			text-align: center;
+			}
+
+			.screensaver .info h3 {
+				color: #999;
+				font-size: 1em;
+				font-weight: normal;
+				line-height: 1em;
+				text-transform: uppercase;
+				}
+
+			.screensaver .info ul {
+				display: inline;
+				}
+
+			.screensaver .info li {
+				margin: 0;
+				padding: 0 0 0 10px;
+				display: inline;
+				}
+
+			.screensaver .info li:first-child {
+				padding-left: 0;
+				background: none;
+				}
+	
+	/* bottom figure - shadow 
+	 * ------------------------------------------------------------------------------------------------ */
+	.wallpaper span.b,
+	.screensaver span.b,
+	.icon span.b,
+	.photos span.b,
+	.photo span.b,
+	.poster span.b
+		{
+		width: 170px;
+		height: 31px;
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		}
+
+		.icon span.b {
+			width: 49px;
+			}
+			
+		.photos span.b,
+		.photo span.b
+			{
+			width: 120px;
+			}
+
+		.poster span.b {
+			width: 80px;
+			}
+
+
+	/* hover state
+	 * ------------------------------*/
+	
+	.wallpaper:hover img,
+	.screensaver:hover img,
+	.icon:hover img,
+	.photos li:hover img,
+	.photo:hover img,
+	.poster:hover img
+		{
+		border: 1px solid #ce8f2f;
+		}
+
+	.wallpaper:hover div.info,
+	.screensaver:hover div,
+	.icon:hover a,
+	.photos li:hover a,
+	.photo:hover a,
+	.poster:hover a
+		{
+		display: block;
+		}
+
+	.wallpaper:hover span.b,
+	.screensaver:hover span.b,
+	.icon:hover span.b, 
+	.photos li:hover span.b,
+	.photo:hover span.b,
+	.poster:hover span.b
+		{
+		}
+
+	
+	/* media input videos */
+		/* -7- videos-info
+		 * ----------------------------------------------------------------------------------------------------*/
+		#videos-info {
+			clear: both;
+			position: relative;
+			background: url(../../images/bg_video_media.png) no-repeat 6px 2px;
+			height: 213px;
+			text-align: left;
+			padding: 0;
+			margin: 18px 0 0 -29px;
+			z-index: 10;
+			}
+
+
+			/* left figure */
+			#videos-info span.rb {
+				/* image replacement */
+				width:  23px;
+				height: 23px;
+				background: url(../images/bg/bg_media_figure_r_b.png) no-repeat left top ;
+				position: absolute;
+				left: 638px;
+				bottom: -6px;
+				}
+				@media screen and (-webkit-min-device-pixel-ratio:0){
+				               #videos-info span.rb {left: 639px;}
+				}
+
+			/* content */
+			#videos-info div.content {
+				width: 676px;
+				height: 213px;
+				position: relative;
+				padding: 0 0 0 20px;
+				margin: 0;
+				z-index: 2;
+			}
+			/* heading */
+			#videos-info h2 {
+				background: transparent url(../../images/videos_data_full_episodes.gif) no-repeat 9px center;
+				width: 300px;
+				height: 36px;
+				padding: 0;
+				margin: 0;
+				text-indent: -1000em;
+				}
+		
+				/* viewport for page transitions */
+				#videos-info .viewport {
+					clear: both;
+					overflow: hidden;
+					position: relative;
+					width: 620px;
+					height: 118px;
+					padding: 0;
+					margin: 19px 0 0 7px;
+				}
+
+				/* thumbnails */ 
+				#videos-info .content ol {
+					clear: both;
+					}
+
+				#videos-info .content ol a {
+					color: #fff;
+					}
+
+				#videos-info .content ol li {
+					margin: 0 9px 0 0;
+					padding: 80px 0 0px;
+					float: left;
+					position: relative;
+					width: 145px;
+					}
+
+					/* thumbnail */
+					#videos-info .content ol .thumbnail {
+						padding: 16px 0 0 19px;
+						width: 145px;
+						position: absolute;
+						left: -19px;
+						top: -16px;
+						bottom: 0px;
+						z-index: 2;
+						background: transparent url(../images/bg_show_videos_thumbnail.png) no-repeat left top;
+						}
+
+					#videos-info .content ol .thumbnail img {
+						display: block;
+						width: 143px;
+						height: 80px;
+						border: 1px solid #000;
+						}
+
+					/*  clip title */
+					#videos-info .content ol h3 {
+						width: 145px;
+						background-color: #000;
+						font-size: 1em;
+						font-weight: normal;
+						line-height: 1.2em;
+						height: 34px;
+						}
+
+					#videos-info .content ol h3 a {
+						padding-left: 15px;
+						padding: 8px 10px 6px 18px;
+						color: #ce8f2f;
+						display: block;
+						background: transparent url(../../images/ico_show_videos_play.png) no-repeat 8px center;
+						}
+
+
+
+				/* thumbnails hover state */
+				#videos-info .content ol li:hover a.thumbnail img {
+					border-color: #ce8f2f;
+					}
+
+				#videos-info .content ol li:hover h3 {
+					background: #ce8f2f;
+					}
+
+				#videos-info .content ol li:hover h3 a {
+					background-image: url(../../images/ico_show_videos_play_h.png);
+					color: #fff;
+					text-decoration: none;
+					}
+
+			/* play nav */
+			#videos-info .play-nav {
+				position: absolute;
+				right: 61px;
+				bottom: 7px;
+				}
+			
+				#videos-info .play-nav h3 {
+					text-indent: -1000em;
+					}
+				#videos-info .play-nav ul li {
+					display: list-item;
+					float: left;
+					padding-left: 10px;
+					}	
+					#videos-info .play-nav ul li a,
+					#videos-info .play-nav ul li a span {
+						display: block;
+						position: relative;
+						width: 9px;
+						height: 20px;
+						overflow: hidden;
+						cursor: pointer;
+						}	
+					#videos-info .play-nav ul li a span {
+						position: absolute;
+						display: block;
+						top: 0;
+						left: 0;
+						width: 9px;
+						height: 20px;
+						background: transparent url(../../images/videos_media_pagination.png) no-repeat 0 0;
+					}
+					#videos-info .play-nav ul li a:hover span,
+					#videos-info .play-nav ul li.active a span {
+						background-position: 0 -23px;
+					}
+			/* octions */
+			#videos-info .actions{
+				font-size: 1.2em;
+				margin: 13px 0 0 -4px;
+				}
+
+				#videos-info .actions li {
+					float: left;
+					padding: 0;
+					display: list-item;
+					}
+
+				#videos-info .actions a:link,
+				#videos-info .actions a:visited,
+				#videos-info .actions a:active {
+					float: left;
+					color: #fff;
+					}
+					
+					#videos-info .actions a:hover {
+						color: #000;
+					}
+
+		/** START videos-info display logic **/
+		/* default: hide pagination controls */
+		#videos-info .play-nav {
+			display: none;	
+		}
+
+		/* state "has-pages": show pagination controls */
+		#videos-info.has-pages .play-nav {
+			display: block;
+		}
+
+		/* state "has-pages": absolute position the pages */
+		#videos-info .content ol {
+			position: absolute;	
+			left: 0px;
+		}
+
+		#videos-info .content ol li {
+			float: none;
+			position: absolute;
+			overflow: hidden;
+		}
+
+		/** END videos-info display logic **/
+
+	/* ad */
+	#videos-info .ad {
+		width: 300px;
+		height: 250px;
+		float none;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		right: -1px;
+		top: 0px;
+		}
+
+		#videos-info .ad img {
+			margin: 0;
+			}
+
+/* -8- show-promo
+ * ----------------------------------------------------------------------------------------------------*/
+
+#show-promo {
+	clear: both;
+	margin: 0;
+	padding: 0 0 44px;
+	position: relative;
+	z-index: 10;
+	width: 761px;
+	}
+
+	#show-promo h2 {
+		/* hidden */
+		}
+
+	/* figure left */
+	#show-promo .sh_l {
+		/* image replacement */
+		
+		width:  63px;
+		height: 125px;
+		background-image: url(../images/bg_show_promo_sh_l.png) ;
+		position: absolute;
+		left: -73px;
+		bottom: 43px;
+		}
+
+	/* figure right */
+	#show-promo .sh_r {
+		/* image replacement */
+		
+		width:  73px;
+		height: 227px;
+		background-image: url(../images/bg_show_promo_sh_r.png) ;
+		position: absolute;
+		right: -90px;
+		top: -57px;
+		}
+
+	/* figure bottom */
+	#show-promo span.b {
+		/* image replacement */
+		width: 961px;
+		height: 44px;
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		background-image: url(../images/bg_show_promo_b.png);
+	
+		}
+
+	/* figure flower */
+	#show-promo span.fig-flower {
+		/* image replacement */
+		width: 112px;
+		height: 56px;
+		background-image: url(../images/bg_show_promo_fig_flower.png);
+		position: absolute;
+		bottom: 12px;
+		left: 598px;
+		}
+
+	/* frog figure */
+	#show-promo span.fig-frog {
+		/* image replacement */
+		
+		/* not displaying by default in inner pages */
+		display: none;
+		
+		width: 68px;
+		height: 75px;
+		position: absolute;
+		right: -2px;
+		bottom: -15px;
+		z-index: 2;
+		background-image: url(../images/figure_frog.png);
+		}
+
+	#show-promo .content {
+		background: transparent url(../images/bg_show_promo.png) repeat-y left bottom;
+		}
+
+	/* item */
+	#show-promo ul {
+		}
+		
+	#show-promo li {
+		margin: 0 11px 0 0;
+		padding: 10px 10px 0px 105px;
+		float: left;
+		width: 204px;
+		}
+
+		/* second column */
+		#show-promo li.view-b {
+			margin-right: 10px;
+			width: 205px;
+			}
+
+		/* 3rd column */
+		#show-promo li.view-c {
+			width: 186px;
+			margin-right: 0;
+			}
+
+
+	/* title */
+	#show-promo h3 {
+		margin: 0 0 15px -90px;
+		font-size: 1.5em;
+		font-weight: normal;
+		text-transform: uppercase;
+		}
+
+	/* heading */
+	#show-promo a.thumbnail {
+		padding: 16px 0 0 19px; 
+		margin: -16px 0 0 -109px;
+		display: block;
+		float: left;
+		background: transparent url(../images/bg_show_promo_thumb.png) no-repeat left top;
+		}
+
+	#show-promo a.thumbnail img {
+		border: 1px solid #333;
+		}
+
+	#show-promo p {
+		margin: 0 0 1em;
+		color: #bfbfbf;
+		font-size: 1.083em;
+		line-height: 1.2em;
+		}
+
+	#show-promo a.more {
+		clear: left;
+		padding-left: 12px;
+		background: transparent url(../images/ico_view_a.png) no-repeat left center;
+		font-size: 1.083em;
+		line-height: 1.2em;
+		text-transform: uppercase;
+		}
+
+	#show-promo a.more:hover {
+		color: #FFF;
+		text-decoration: none;
+		}
+
+/*logo*/
+#bonesLogo {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: -14px;
+	top: 17px;
+}
+
+#promos {
+	width: 100%;
+	background-color: #1e1e1e;
+}
+
+#headerbox {
+	width: 100%;
+	background-color: #1e1e1e;
+}
+/*
+     FILE ARCHIVED ON 18:26:13 Jan 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:13:24 Jul 11, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.resolve: 26.254
+  esindex: 0.011
+  load_resource: 40.358
+  exclusion.robots.policy: 0.137
+  captures_list: 44.204
+  exclusion.robots: 0.147
+  CDXLines.iter: 11.64 (3)
+  LoadShardBlock: 24.707 (3)
+  PetaboxLoader3.datanode: 36.31 (4)
+  RedisCDXSource: 5.519
+*/

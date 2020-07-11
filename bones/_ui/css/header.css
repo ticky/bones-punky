@@ -1,0 +1,246 @@
+/*
+ *  Fringe - header
+ *
+ */
+
+
+/* navigation background */
+span.fig_header {
+	/* image replacement */
+	width: 982px;
+	height: 50px;
+	position: absolute;
+	left: -11px;
+	top: 1px;
+	/* background-image: url(../images/bg_header.png); */
+	z-index: 10;
+	}
+
+/* show header
+ * ------------------------------------------------------------------------------------------*/
+#show-header {
+	position: relative;
+	width: 974px;
+	height: 90px;
+	margin: 0 0 10px;
+	z-index: 20;
+	}
+
+	/* logo 
+	 * --------------------------------------------------------------------------------------*/
+	#show-header a.logo {
+		/* image replacement */
+
+		margin-top: 10px;
+		margin-left: -1px;
+		float: left;
+		width: 167px;
+		height: 36px;
+		position: relative;
+		z-index: 100;
+		background-image: url(../images/bones_logo_s.png);
+		}
+
+	/* motto */
+	#show-header p.motto {
+	
+		/* image replacement */
+		width: 275px;
+		height: 20px;
+		position: absolute;
+		top: 235px;
+		left: 95px;
+		z-index: 10;
+		background: transparent url(../images/bones_motto.png);
+
+		/* tmp, waiting for flash */
+		display: none;
+		}
+
+	/* play-now */ 
+	#show-header a.play-now {
+		/* !!!image replacement */
+		width: 91px;
+		height: 13px;
+		position: absolute;
+		top: 267px;
+		left: 290px;
+		z-index: 10;
+		background-image: url(../images/bt_play_now.png);
+
+		/* !!!tmp, waiting for flash */
+		display: none;
+		}
+
+
+	/* quickplay */
+	#quickplay {
+		width: 960px;
+		height: 445px;
+		position: relative;
+		z-index: 1;
+		text-align: right;
+		}
+
+		#quickplay img {
+			position: absolute;
+			left: -320px;
+			top: 0px;
+			}
+		
+
+	/* clock */
+	#show-header .clock {
+		overflow: hidden;
+		position: absolute;
+		left: -80px;
+		bottom: 0px;
+		z-index: 15;
+		}
+
+		#show-header .clock .inner {
+			margin: 0;
+			padding: 28px 0 0 80px;
+			width: 353px;
+			height: 56px;
+			position: static;
+			background: transparent url(../images/bg_clock.png) no-repeat left top;
+			}
+
+		#show-header .clock h3 {
+			/* hidden */
+			}
+
+		#show-header .clock dl {
+			color: #FFF;
+			font-size: 2.166em;
+			font-family: "Trebuchet MS",Helvetica,Aril,Verdana,sans;
+			line-height: 1.2em;
+			}
+
+			#show-header .clock dt {
+				/* hidden */
+				}
+
+			#show-header .clock dd {
+				padding: 0 12px 0 0;
+				margin: 0;
+				display: inline;
+				background: transparent no-repeat right center;
+				}
+
+				#show-header .clock dd.days {
+					background-image: url(../images/ico_clock_sep1.png);
+					}
+
+				#show-header .clock dd.hours {
+					background-image: url(../images/ico_clock_sep2.png);
+					}
+
+				#show-header .clock dd.minutes {
+					background-image: url(../images/ico_clock_sep2.png);
+					}
+			
+			#show-header .clock dd span {
+				color: #f7d700;
+				font-size: .615em;
+				line-height: 1em;
+				vertical-align: super;
+				}
+
+		#show-header .clock a.add {
+			position: absolute;
+			right: 0;
+			top: 28px;
+			height: 37px;
+			width: 37px;
+			display: block;
+			}
+
+		#show-header .clock p {
+			position: absolute;
+			bottom: -2px;
+			color: #999;
+			font: normal normal normal 1.25em/1em "Trebuchet MS",Helvetica,Arial,Verdana,sans;
+			text-transform: uppercase;
+			}
+
+			#show-header .clock p em {
+				color: #f7d700;
+				font-style: normal;
+				}
+
+	/* flash countdown clock */
+	#countdown {
+		position: absolute;
+		left: -88px;
+		top: 25px;
+	}
+
+	/* community tools */
+	#show-header .community-tools {
+		height: 45px;
+		position: absolute;
+		left: 246px;
+		top:51px;
+		z-index: 15;
+		overflow: hidden;
+		}
+
+		#show-header .community-tools .inner {
+			margin: 0;
+			width: 679px;
+			height: 51px;
+			/* background: transparent url(../images/bg_community_tools.png) no-repeat left top;*/
+			}	
+
+		#show-header .community-tools h3 {
+			/* hidden */
+			}
+
+		/*#show-header .community-tools ul {
+			position: absolute;
+			left: -12px;
+			bottom: -2px;
+			font: normal normal normal 1.167em/1em "Trebuchet MS",Helvetica,Arial,Verdana,sans;
+			text-transform: uppercase;
+			}
+
+		#show-header .community-tools li {
+			display: inline;
+			}
+
+
+		#show-header .community-tools a {
+			padding: 3px 3px 3px 12px;
+			color: #018fbf;
+			background: transparent url(../images/ico_community_tools_sep.png) no-repeat left center;
+			}
+
+		#show-header .community-tools a:hover {
+			color: #FFF;
+			}*/
+
+
+
+/*
+     FILE ARCHIVED ON 18:26:09 Jan 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:13:24 Jul 11, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots: 0.205
+  esindex: 0.014
+  LoadShardBlock: 60.651 (3)
+  RedisCDXSource: 0.659
+  PetaboxLoader3.resolve: 58.399 (2)
+  PetaboxLoader3.datanode: 43.549 (4)
+  load_resource: 45.905
+  exclusion.robots.policy: 0.19
+  captures_list: 80.513
+  CDXLines.iter: 14.466 (3)
+*/

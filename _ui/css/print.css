@@ -1,0 +1,127 @@
+body{
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 11pt;
+	background: #fff;
+}
+
+a[href]:after {
+   content: " (" attr(href) ") ";
+   font-size: 50%; 
+   color: #aaa;
+}
+
+a[href^="/"]:after {
+	content: " (http://domain.com" attr(href) ") ";
+	font-size: 50%; 
+	color: #aaa;
+	}
+	 
+#accessibility-menu, #navigation { 
+	display:none !important; }
+
+a:link, a:visited {
+	color: #aaa;
+	}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+#header h1:before{
+	content: "FOX";
+	color: #000;
+	font-size: 36pt !important;
+	font-weight: bold;
+}
+
+#header h1 img,
+hr,
+#nav, 
+#user-nav, 
+#carousel, .ad, 
+#fox-nav, 
+#fox-sites, 
+#header .date, 
+#schedule-tonight .see-full-schedule, 
+#schedule-tonight .watch,
+#schedule-tonight .add,
+#videos .see-all, 
+#accessibility-nav, 
+#videos-player,
+#videos .video-running-time,
+#videos .watch,
+#videos ul,
+.set-navigation,
+#promo-mods .view-all,
+#content .view-options,
+#time-nav, #time-nav-2,
+#schedule .hours,
+#week-options ul,
+#schedule-player,
+#promos,
+#shows-listing li ul,
+#episodes-listing p,
+h3 .rss,
+h2 .rss,
+.video-list .thumbnail em,
+#bookmark-tool,
+#share,
+#video-player,
+#commercial,
+#installation-guide,
+#rate,
+.episode-season-selection,
+.on-air,
+.episode-duration a,
+#livecontent-show-official-update,
+.rate-review,
+.sort-reviews,
+#report-panel,
+#livecontent-episode-reviews
+	{
+	display: none !important;
+}
+#schedule-tonight, #videos{
+	float: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 100%;
+}
+#content p, #content li, #content dt, #content dd, #promo-mods li, #promo-mods dt, #promo-mods dd{
+	font-size: 10pt !important;
+	margin: 0 0 0;
+	padding: 0;
+	line-height: normal;
+}
+#header, #content, #promo-mods, #schedule, #shows-listing{
+	margin: 0 0 20pt;
+	padding: 0;
+	border-bottom: 1px solid gray;
+}
+#videos .video-description, #schedule-tonight, #shows-listing li, #videos-higest-rated li, #episodes-most-popular li, #videos-featured li, #show-episodes, #show-episodes li, #show-player, #show-videos, #show-videos li{
+	margin: 0 0 20pt;
+	padding: 0;
+}
+
+/*
+     FILE ARCHIVED ON 17:17:46 Jan 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:13:24 Jul 11, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 7.353
+  exclusion.robots: 0.236
+  exclusion.robots.policy: 0.22
+  captures_list: 171.225
+  PetaboxLoader3.datanode: 61.016 (4)
+  LoadShardBlock: 138.001 (3)
+  esindex: 0.014
+  PetaboxLoader3.resolve: 104.306 (3)
+  CDXLines.iter: 17.006 (3)
+  load_resource: 57.992
+*/

@@ -1,0 +1,121 @@
+/*
+ *	Bones - page info
+ *
+ *  1. Bones main updates
+ *	2. show-info
+ *
+ * */
+
+
+/* -1- main updates 
+ * ----------------------------------------------------------------------------------------------------*/
+	body.info #interior-content h1 {
+		background: transparent url(/web/20100113182612im_/http://www.fox.com/bones/images/info_title.png) no-repeat left top;
+		width: 281px;
+		height: 24px;
+		font-size: 18px;
+		text-indent: -1000em;
+		padding: 0;
+		margin: 0 0 20px 0;
+		z-index: 20;
+	}
+	
+	/* info text */
+	#info-text {
+		width: 510px;
+		padding: 0;
+	}
+	#info-text p {
+		margin: 0 0 12px 0;
+	}
+	
+/* -2- show info 
+ * ----------------------------------------------------------------------------------------------------*/
+#show-info {
+	margin: 0 0 -85px;
+	padding: 85px 440px 85px 10px;
+	width: 615px;
+	min-height: 415px;
+	_height: 500px; /* temp IE6 hack */
+	position: relative;
+	background: transparent url(/web/20100113182612im_/http://www.fox.com/bones/_ui/images/bg_show_info.jpg) no-repeat right top;
+	}
+
+	#show-info h2 {
+		margin: 0 0 18px;
+		color: #f7d700;
+		font: normal 1.7em/1em 'Futura','Trebuchet MS',Helvetica,Arial,sans-serif;
+		text-transform: uppercase;
+		background:url(/web/20100113182612im_/http://www.fox.com/bones/_ui/images/bg_show_info.png) no-repeat left top;
+		text-indent: -1000em;
+		}
+		
+	#show-info p{
+		margin: 0 0 1em;
+		line-height: 1.4;
+		color: #bfbfbf;
+		}
+
+		#show-info p.formed{
+			margin-right: 65px;
+			}
+
+	#show-info .actions {
+		position: absolute;
+		right: 100px;
+		bottom: 92px;
+		font-size: 1em;
+		overflow: hidden;
+		}
+	
+			
+			#show-info .actions li {
+				background:url(/web/20100113182612im_/http://www.fox.com/bones/_ui/images/ico_plus_divider.gif) no-repeat right center;	
+				padding-left: 13px;
+				display: list-item;
+				float: left;
+				margin-right: -10px;
+			}
+				#show-info .actions a.bookmark-button{
+						background: url(/web/20100113182612im_/http://www.fox.com/bones/_ui/images/bg_bookmark_share.png) no-repeat left top;
+						text-indent: -1000em;
+						display: block;
+						height: 9px;
+						width: 190px;
+						margin-right: -1px;
+					}
+					#show-info .actions a.bookmark-button:hover{
+						background: url(/web/20100113182612im_/http://www.fox.com/bones/_ui/images/bg_bookmark_share_h.png) no-repeat left top;
+					}
+				#show-info .actions a.grab-fringe-button{
+					background: url(/web/20100113182612im_/http://www.fox.com/bones/_ui/images/bg_grab_fringe.png) no-repeat left top;
+					text-indent: -1000em;
+					display: block;
+					height: 10px;
+					width: 158px;
+				}
+					#show-info .actions a.grab-fringe-button:hover{
+						background: url(/web/20100113182612im_/http://www.fox.com/bones/_ui/images/bg_grab_fringe_h.png) no-repeat left top;
+					}	
+
+/*
+     FILE ARCHIVED ON 18:26:12 Jan 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:13:24 Jul 11, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  esindex: 0.01
+  exclusion.robots: 0.133
+  captures_list: 85.025
+  exclusion.robots.policy: 0.123
+  LoadShardBlock: 59.135 (3)
+  load_resource: 109.296
+  PetaboxLoader3.resolve: 70.998
+  CDXLines.iter: 16.833 (3)
+  RedisCDXSource: 5.262
+  PetaboxLoader3.datanode: 70.929 (4)
+*/

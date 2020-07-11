@@ -1,0 +1,5 @@
+<?xml version="1.0" standalone="yes" ?>
+<!-- This is a reconstruction of just enough of the original configuration to start the game -->
+<config>
+  <ads url="/bones-punky/features/deploy/xml/ads.xml" showOnLoad="false" duration="0" />
+</config>

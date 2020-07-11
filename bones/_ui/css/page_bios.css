@@ -1,0 +1,471 @@
+/*
+ *	Bones - page bios
+ *
+ *  1. Bones main updates
+ *
+ * */
+
+
+/* -1- main updates 
+ * ----------------------------------------------------------------------------------------------------*/
+	body.bios #interior-content {
+		min-height: 1400px;
+	}
+	
+	body.bios #interior-content h1 {
+		background: transparent url(/web/20100113182609im_/http://www.fox.com/bones/images/bios_title.png) no-repeat left top;
+		width: 295px;
+		height: 31px;
+		font-size: 18px;
+		text-indent: -1000em;
+		padding: 0;
+		margin: -10px 0 12px 0;
+		z-index: 20;
+	}
+
+	/* bottom right figure*/
+	body.bios #content span.cr {
+		width: 940px;
+		height: 725px;
+		}
+		
+		/* recaps text */
+		#bios-text {
+			width: 425px;
+			min-height: 560px;
+			padding: 0 0 0 100px;
+		}
+		#bios-text p {
+			margin: 0 0 12px 0;
+		}
+		#bios-text p.biosProfileTitle {
+			font-size: 18px;
+		}
+		
+		
+/* -2- show bios 
+ * ----------------------------------------------------------------------------------------------------*/
+
+#show-bios {
+	margin: 0 0 10px;
+	padding: 75px 30px 0 350px;
+	min-height: 393px;
+	position: relative;
+	z-index: 1;
+	}
+
+	#show-bios * {
+		position: relative;
+		z-index: 100;
+		}
+
+	/* figure bg thumbnails */
+	#show-bios span.fig_thumbs {
+		/* image replacement */
+		width: 660px;
+		height: 114px;
+		position: absolute;
+		z-index: 11;
+		right: 0px;
+		top: 150px;
+		background-image: url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_show_bios_fig_thumbs.png);
+		}
+
+
+	/* hero big picture */	
+	#show-bios .show-bio-image {
+		position: absolute;
+		left: -95px;
+		top: 0;
+		z-index: 10;
+		}
+		#show-bios div.bio{
+			position: relative;
+		}
+		#show-bios .show-bio-image img{
+			position: absolute;
+			top: -1px;
+			z-index: 10;
+			}
+
+	#show-bios span.bt{
+		position: absolute;
+		left: -318px;
+		display: block;
+		top: 0;
+		width: 240px;
+		height: 466px;
+		background: url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_bios_img.jpg) no-repeat left top;
+		}
+
+	/* thumbnails */
+	#show-bios ol {
+		overflow: hidden;
+		margin: 0 0 0 -20px;
+		padding: 0;
+		}
+
+		#show-bios ol li {
+			margin: 0 10px 0 0;
+			padding: 0px 0 30px;
+			float: left;
+			position: relative;
+			width: 118px;
+			height: 88px;
+			background: none;
+			}
+
+		#show-bios .content ol li a {
+			position: relative;
+			display: block;
+			height: 88px;
+			width: 118px;
+			color: #018fbf;
+			}
+			
+		#show-bios ol li a em{
+			display: block;
+			width: 120px;
+			height: 43px;
+			position: absolute;
+			top: 91px;
+			left: 0;
+			}
+
+		#show-bios ol li.olivia a em {
+			background: transparent url(/web/20100113182609im_/http://www.fox.com/bones/_media/bios/olivia_r_n.png) no-repeat left top;
+			}	
+			#show-bios ol li.olivia.active a em,
+			#show-bios ol li.olivia.active a:hover em{
+				background: transparent url(/web/20100113182609im_/http://www.fox.com/bones/_media/bios/olivia_r_o.png) no-repeat left top;
+			}
+			#show-bios ol li.olivia a:hover em{
+				background: transparent url(/web/20100113182609im_/http://www.fox.com/bones/_media/bios/olivia_r_oh.png) no-repeat left top;
+			}
+		
+		#show-bios ol li.peter a em{
+			background: transparent url(/web/20100113182609im_/http://www.fox.com/bones/_media/bios/bishop_jr_n.png) no-repeat left top;
+			}	
+			#show-bios ol li.peter.active a em,
+			#show-bios ol li.peter.active a:hover em{
+				background: transparent url(/web/20100113182609im_/http://www.fox.com/bones/_media/bios/bishop_jr_r_o.png) no-repeat left top;
+			}
+			#show-bios ol li.peter a:hover em{
+				background: transparent url(/web/20100113182609im_/http://www.fox.com/bones/_media/bios/bishop_jr_r_oh.png) no-repeat left top;
+			}
+		
+		#show-bios ol li.walter a em{
+			background: transparent url(/web/20100113182609im_/http://www.fox.com/bones/_media/bios/bishop_r_n.png) no-repeat left top;
+			}	
+			#show-bios ol li.walter.active a em,
+			#show-bios ol li.walter.active a:hover em{
+				background: transparent url(/web/20100113182609im_/http://www.fox.com/bones/_media/bios/bishop_r_o.png) no-repeat left top;
+			}
+			#show-bios ol li.walter a:hover em{
+				background: transparent url(/web/20100113182609im_/http://www.fox.com/bones/_media/bios/bishop_r_oh.png) no-repeat left top;
+			}
+		
+		#show-bios ol li.phillip a em{
+			background: transparent url(/web/20100113182609im_/http://www.fox.com/bones/_media/bios/broleys_r_n.png) no-repeat left top;
+			}	
+			#show-bios ol li.phillip.active a em,
+			#show-bios ol li.phillip.active a:hover em{
+				background: transparent url(/web/20100113182609im_/http://www.fox.com/bones/_media/bios/broleys_r_o.png) no-repeat left top;
+			}
+			#show-bios ol li.phillip a:hover em{
+				background: transparent url(/web/20100113182609im_/http://www.fox.com/bones/_media/bios/broleys_r_oh.png) no-repeat left top;
+			}
+			
+	#show-bios ol .thumbnail {
+		padding: 0;
+		background: none;
+		display: block;
+		height: 88px;
+		width: 118px;
+		}
+
+	#show-bios ol .thumbnail img {
+		display: block;
+		width: 118px;
+		height: 88px;
+		border: 1px solid #333;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		}
+		#show-bios ol li a span {
+			display: block;
+			width: 118px;
+			height: 88px;
+			z-index: 100;
+			position: absolute;
+			top: 1px;
+			left: 1px;
+		
+		}
+		#show-bios ol li a:hover span{
+			background-image: url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_bio_hover.png);
+			border: 1px solid #018fbf;
+		}
+		#show-bios ol li.active a:hover span{
+			background-image: none;
+			border: none;
+		}
+
+		#show-bios ol li.active a.thumbnail img {
+			border-color: #f7d700;
+			}
+
+
+
+		/* hero name */	
+		#show-bios h2{
+			margin: 0 0 10px 0;
+			color: #f7d700;
+			font: normal normal normal 1.75em/1.2em 'Futura','Trebuchet MS', Helvetica,Arial,sans-serif;
+			text-transform: uppercase;
+			width: 600px;
+			text-indent: -1000em;
+			}
+
+			#show-bios h2 a{
+				font-size: 0.667em;
+				margin-left: 1em;
+				vertical-align: baseline;
+				}
+			
+			#show-bios h2 a:hover {
+				color: #018fbf;
+				text-decoration: none;
+				}
+		#show-bios h2 span,
+		#show-bios h2 a{
+			float: left;
+			height: 20px;
+			background: transparent no-repeat left top;
+			margin-bottom: 15px;
+		}		
+			/* phillip heading + link */
+			#show-bios .phillip  h2 span{
+				background-image:url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_broyles_heading.png);
+				width: 164px;
+			}
+			#show-bios .phillip  h2 span a,
+			#show-bios .phillip  h2 span a:hover{
+				width: 164px;
+				display: block;
+				background-image: none;
+			}
+			#show-bios .phillip  h2 a{
+				background-image:url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_broyles_link.png);
+				width: 130px;
+			}
+			#show-bios .phillip  h2 a:hover{
+				background-image:url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_broyles_link_h.png);
+			}
+			
+			/* agent olivia heading + link */
+			#show-bios .olivia  h2 span{
+				background-image:url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_agentanna_heading.png);
+				width: 269px;
+			}
+			#show-bios .olivia  h2 span a,
+			#show-bios .olivia  h2 span a:hover{
+				width: 269px;
+				display: block;
+				background-image: none;
+			}
+			#show-bios .olivia  h2 a{
+				background-image:url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_agentanna_link.png);
+				width: 106px;
+			}
+			#show-bios .olivia  h2 a:hover{
+				background-image:url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_agentanna_link_h.png);
+			}
+			
+			/* peter bishop heading + link */
+			#show-bios .peter  h2 span{
+				background-image:url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_peter_heading.png);
+				width: 142px;
+			}
+			#show-bios .peter  h2 span a,
+			#show-bios .peter  h2 span a:hover{
+				background-image: none;
+				display: block;
+				width: 142px;
+			}
+			#show-bios .peter  h2 a{
+				background-image:url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_peter_link.png);
+				width: 150px;
+			}
+			#show-bios .peter  h2 a:hover{
+				background-image:url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_peter_link_h.png);
+			}
+			
+			/* walter heading + link */
+			#show-bios .walter  h2 span{
+				background-image:url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_bishop_heading.png);
+				width: 205px;
+			}
+			#show-bios .walter  h2 a{
+				background-image:url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_bishop_link.png);
+				width: 110px;
+			}
+			#show-bios .walter  h2 a:hover{
+				background-image:url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_bishop_link_h.png);
+			}
+			#show-bios .walter  h2 span a,
+			#show-bios .walter  h2 span a:hover{
+				background-image: none;
+				display: block;
+				width: 205px;
+			}
+			
+		/* by default all are hidden */
+		div.olivia, div.phillip, div.peter, div.walter{
+			display: none;
+		}	
+							
+		#show-bios p {
+			margin: 0 0 1em;
+			color: #bfbfbf;
+			font-size: 1.08em; 
+			line-height: 1.4;
+			clear: left;
+			}
+
+		#show-bios .actions {
+			position: absolute;
+			right: 0px;
+			bottom: 2px;
+			margin-right: 10px;
+			overflow: hidden;
+			}
+			
+			#show-bios .actions li {
+				background:url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/ico_plus_divider.gif) no-repeat right center;	
+				padding-left: 13px;
+				display: list-item;
+				float: left;
+				margin-right: -10px;
+			}
+				#show-bios .actions a.bookmark-button{
+						background: url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_bookmark_share.png) no-repeat left top;
+						text-indent: -1000em;
+						display: block;
+						height: 9px;
+						width: 190px;
+						margin-right: -1px;
+					}
+					#show-bios .actions a.bookmark-button:hover{
+						background: url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_bookmark_share_h.png) no-repeat left top;
+					}
+				#show-bios .actions a.grab-fringe-button{
+					background: url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_grab_fringe.png) no-repeat left top;
+					text-indent: -1000em;
+					display: block;
+					height: 10px;
+					width: 158px;
+				}
+					#show-bios .actions a.grab-fringe-button:hover{
+						background: url(/web/20100113182609im_/http://www.fox.com/bones/_ui/images/bg_grab_fringe_h.png) no-repeat left top;
+					}
+#showContent {
+	position: relative;
+	background: transparent url(/web/20100113182609im_/http://www.fox.com/bones/images/bg.jpg) no-repeat center top;
+	padding: 0 0 10px;
+	overflow: hidden;
+	z-index: 5;
+	}
+/* video data + full episodes*/
+	#biosVideoData {
+	background-image:url(/web/20100113182609im_/http://www.fox.com/bones/images/video_data_full_episodes_placeholder.png);
+	background-repeat:no-repeat;
+	width:687px;
+	height:235px;
+	position:relative;
+	z-index:7;
+	left:70px;
+}
+/* video data + full episodes*/
+	#videoTh {
+	background-image:url(/web/20100113182609im_/http://www.fox.com/bones/images/bios_content_bg_bot.png); 
+	background-repeat:no-repeat; 
+	width:815px; 
+	height:284px;
+}
+/* bios profile nav */
+#biosProNavBox {
+	position: absolute;
+	left: -85px;
+	top: 135px;
+	background: transparent url(/web/20100113182609im_/http://www.fox.com/bones/images/bios_nav_bg.png) no-repeat left top;
+	width: 214px;
+	height: 576px;
+	z-index: 50;
+}
+#biosNav a:link, 
+#biosNav a:visited,
+#biosNav a:active {
+	color: #fff;
+	text-decoration: none;
+}
+#biosNav a:hover {
+	color: #000;
+	text-decoration: none;
+}
+#biosNavBody {
+	padding: 34px 14px 34px 34px;
+}
+#biosNavBody li {
+	padding-bottom: 10px;
+}
+#biosNavBody span {
+	display: block;
+	font-size: 18px;
+}
+#biosNavBody ul {
+	padding: 0 0 0 12px;
+	margin: 0;
+}
+#biosNavBody ul li {
+	padding-bottom: 0;
+}
+		
+#biosGun {
+	position:absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 21;
+	top: 674px;
+	left: 8px;
+}
+#bioscontentBgBot {
+	position:absolute;
+	z-index:22;
+	top:674px;
+	left:8px;
+}
+
+/*
+     FILE ARCHIVED ON 18:26:09 Jan 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:13:24 Jul 11, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  CDXLines.iter: 11.272 (3)
+  PetaboxLoader3.resolve: 79.887 (3)
+  exclusion.robots.policy: 0.117
+  esindex: 0.01
+  LoadShardBlock: 94.151 (3)
+  PetaboxLoader3.datanode: 47.439 (4)
+  captures_list: 109.141
+  RedisCDXSource: 0.72
+  exclusion.robots: 0.127
+  load_resource: 47.434
+*/
