@@ -20,6 +20,10 @@ Then, with it working, I set about archiving the surrounding web page, updating 
 
 And that's that!
 
+## How did you get it working after December 2020's Flash apocalypse?
+
+I've embedded [ruffle](https://ruffle.rs) to enable it to run in HTML5-capable browsers where possible. Unfortunately, this is a modern enough game (using ActionScript 3) that it cannot be fully emulated this way.
+
 ## Copyright?
 
 Not to be all "no copyright intended" or anything but this is for archival purposes only and I do not claim any ownership of any of the resources contained herein!
